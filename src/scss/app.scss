@@ -1,0 +1,21 @@
+/* Core variables */
+@import 'base/vars';
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base */
+@import 'base/reset';
+@import 'base/print';
+@import 'base/fonts';
+@import 'base/mixins';
+
+/* Deafults */
+@import 'base/defaults';
+
+/* Components */
+@import 'components/header';
+@import 'components/footer';
+@import 'components/main';
