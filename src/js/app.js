@@ -1,6 +1,6 @@
+import StartTest from './startTestAnimation';
 import '../scss/app.scss';
 
-/* Your JS Code goes here */
-
-/* Demo JS */
-import './demo.js';
+document.querySelector('.start-test').addEventListener('click', function () {
+  StartTest();
+});

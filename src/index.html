@@ -8,42 +8,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="The Croc">
     
-    <!-- Favicon (https://www.favicon-generator.org/) -->
-    <link rel="apple-touch-icon" sizes="57x57" href="images/design/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/design/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/design/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/design/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/design/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/design/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/design/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/design/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/design/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/design/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/design/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/design/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/design/favicon-16x16.png">
-    <link rel="manifest" href="images/design/manifest.json">
-    <meta name="msapplication-TileColor" content="#2b2e40">
-    <meta name="msapplication-TileImage" content="images/design/ms-icon-144x144.png">
-    <meta name="theme-color" content="#2b2e40">
-    <!-- /Favicon -->
-    
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1>Header</h1>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <h1>Main Content</h1>
+
+    <main class="bg-dark overflow-hidden">
+      <div class="container pt-60 pb-96 relative">
+        
+        <div class="background-elements h-full w-full absolute top-0 bottom-0 z-0">
+          <div class="intro-img absolute right-0 bottom-0 z-0">
+            <img src="../images/content/home-shape1.png" alt="">
+          </div>
+          <div class="main-shape absolute right-1/4 bottom-1/2 z-10 origin-center">
+            <svg class="origin-top-left" width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="inner" d="M130 260C130 188.24 188.24 130 260 130C331.76 130 390 188.24 390 260C390 331.76 331.76 390 260 390C188.24 389.48 130 331.76 130 260Z" fill="transparent"/>
+              <path class="outer" d="M260 0C117.52 0 0 117.52 0 260C0 402.48 117.52 520 260 520V390C188.24 390 130 331.76 130 260C130 188.24 188.24 130 260 130C331.76 130 390 188.24 390 260H520C520 117.52 403.52 0 260 0Z" fill="#4E3EB1"/>
+              </svg>
+          </div>
+        </div>
+
+        <div class="intro text-white relative z-10">
+          <div class="grid grid-cols-12 gap-8">
+            <div class="col-span-1 text-right">
+              <svg class="ml-auto" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M66 33V0C48.576 0 31.68 6.86405 19.272 19.272C6.86397 31.68 0 48.312 0 66H33C33 47.784 47.784 33 66 33Z" fill="#4E3EB1"/>
+                </svg>
+            </div>
+            <div class="col-span-10">
+              <h1 class="text-h3 mb-4">The AppDynamics Business Observability Platform</h1>
+              <h2 class="text-h1 font-light">Welcome to the AppDynamics Business Observability Journey Mapper.</h2>
+            </div>
+            <div class="col-span-8 col-start-2 text-3xl">
+              <p>Technologists today need to be able to contextualize IT performance insights with real-time business data to prioritize actions based on customer and business impact. This is what we call Business Observability.</p>
+              <p>But few technologists currently have the strategy or tools to truly connect IT performance with business outcomes and 73% are concerned that this will be detrimental to their organization in the next year.</p>
+              <p>Technologists have no option but to urgently begin the journey to link full-stack observability with business context within their organizations. The Business Observability Journey Mapper identifies 6 key stages in this journey.</p>
+              <p>By answering seven short questions, we’ll assess your organization’s current capabilities and we’ll give you advice on how you can speed up your journey so that you can cut through complexity and observe what matters most.</p>
+              <div class="start-test button mt-8">
+                Take The Test
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="questions relative z-10 opacity-0 h-0 pointer-events-none">
+          <div class="grid grid-cols-12 gap-8">
+
+            <div class="questions-top col-span-12 text-white mb-8 -translate-y-8 opacity-0">
+              <h3 class="mb-10 w-full">Business Observability Journey Mapper tool</h3>
+              <div class="steps flex justify-end items-end">
+                <div class="tabs flex justify-items-end items-end">
+                  <span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="label leading-none">
+                  <span class="step-number">1</span> of 7 steps
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-span-12">
+              <div class="question question-1">
+                <div class="grid grid-cols-12 gap-8">
+                  <div class="md:col-span-1 col-sapn-12">
+                    <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none"><path fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/><path fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/><path stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/></svg>
+                  </div>
+                  <div class="lg:col-span-9 md:col-span-10 col-span-12">
+                    <div class="font-light text-h3 mb-7">Our research shows that, over the last 12 months, technologists were on average asked to deliver digital transformation projects three times faster than prior to the pandemic.</div>
+                    <div class="text-6xl leading-tight">How has this acceleration of digital transformation impacted you?</div>
+                    <div class="inputs">
+                      <div class="input pill-type mt-20">
+                        I have felt under immense pressure
+                        <div class="pills flex justify-start items-start mt-8">
+                          <div class="button pill">Yes - definitely</div>
+                          <div class="button pill">To some extent</div>
+                          <div class="button pill">Not particularly</div>
+                        </div>
+                      </div>
+                      <div class="input pill-type mt-20">
+                        My job feels more complex
+                        <div class="pills flex justify-start items-start mt-8">
+                          <div class="button pill">Yes - definitely</div>
+                          <div class="button pill">To some extent</div>
+                          <div class="button pill">Not particularly</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="questions-bottom col-span-12 text-white mb-8 translate-y-8 opacity-0">
+              <div class="nav flex justify-between items-center">
+                <div class="button back opacity-0 pointer-events-none">
+                  Back
+                </div>
+                <div class="button primary cursor-pointer">
+                  Next >
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </main>
-    <footer>
-      <div class="container">
-        <h1>Footer</h1>
-      </div>
-    </footer>
+
   </body>
 </html>

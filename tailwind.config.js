@@ -1,15 +1,14 @@
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  purge: {
-    enabled: true,
-    content: [
-      './src/**/*.html',
-      './src/**/*.js',
-      './dist/**/*.html',
-      './dist/**/*.js',
-    ],
-  },
+  purge: ['./src/**/*.html', './src/**/*.js'],
+  // purge: {
+  //   enabled: true,
+  //   content: [
+  //     './src/**/*.html',
+  //     './src/**/*.js',
+  //   ],
+  // },
   darkMode: false, // or 'media' or 'class'
   theme: {
     container: {
@@ -18,25 +17,29 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#FE5B78',
+        primary: '#725EFF',
+        dark: '#19212B',
+        purple: '#4E3EB1',
+        grey: '#EBEDF1'
       },
       fontFamily: {
-        header: 'CircularXX Bold',
-        body: 'CircularXX',
-        thin: 'CircularXX Thin',
-        light: 'CircularXX Light',
-        medium: 'CircularXX Medium',
-        bold: 'CircularXX Medium',
-        black: 'CircularXX Black',
-        xblack: 'CircularXX ExtraBlack',
+        header: 'appd_sans_tighterregular',
+        body: 'appd_sans_tighterlight',
+        light: 'appd_sans_tighterlight',
+        medium: 'appd_sans_tightermedium',
+        bold: 'appd_sans_tighterbold',
+        heavy: 'appd_sans_tighterheavy',
       },
       fontSize: {
-        h1: '9.6rem',
-        h2: '4rem',
-        h3: '3rem',
-        h4: '2rem',
-        24: '2.4rem',
+        h1: '4.8rem',
+        h2: '2.8rem',
+        h3: '2rem',
+        h4: '1.6rem',
+        18: '1.8rem',
         14: '1.4rem',
+      },
+      borderRadius: {
+        6: '0.6rem',
       },
     },
   },
@@ -46,13 +49,6 @@ module.exports = {
   plugins: [
     plugin(function ({ addBase, config }) {
       addBase({
-        a: {
-          textDecoration: 'none',
-          transition: '0.4s ease',
-        },
-        'a:hover': {
-          color: config('theme.textColor.primary'),
-        },
         'h1, h2, h3, h4, h5': {
           lineHeight: config('theme.lineHeight.tight'),
         },

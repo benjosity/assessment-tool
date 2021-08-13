@@ -16,9 +16,9 @@ html {
 
 body {
   font-weight: 300;
-  font-size: 1.6rem;
-  font-family: 'CircularXX';
-  line-height: 1.5;
+  font-size: 1.8rem;
+  font-family: 'appd_sans_tighterlight';
+  line-height: 1.4;
 }
 
 body,
@@ -31,7 +31,7 @@ h2,
 h3,
 h3,
 h4 {
-  @apply font-header tracking-tighter;
+  @apply font-header tracking-tight leading-tight;
 }
 
 h1 {
@@ -50,4 +50,34 @@ h4 {
 img {
   max-width: 100%;
   vertical-align: bottom;
+}
+
+p {
+  @apply my-4;
+}
+
+.container {
+  @media (min-width: 1280px) {
+    max-width: 1180px;
+  }
+}
+
+.button {
+  @apply inline-block rounded-full px-8 py-6 bg-white text-dark font-medium text-3xl cursor-pointer ease-in transition-all duration-500;
+
+  &:hover {
+    @apply bg-primary text-white;
+  }
+
+  &.primary {
+    @apply bg-purple text-white;
+
+    &:hover {
+      @apply bg-white text-primary;
+    }
+  }
+}
+
+.pill {
+  @apply bg-grey font-light mr-8;
 }

@@ -84,6 +84,7 @@
   },
   "target": "web",
   "dependencies": {
+    "gsap": "^3.7.1",
     "svgo": "^2.3.0"
   }
 }

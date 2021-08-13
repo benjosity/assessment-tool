@@ -1,66 +1,34 @@
 /**
  * Fonts
 */
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 @font-face {
-  font-family: 'CircularXX Thin';
-  src: url('../fonts/CircularXX-Thin.woff2') format('woff2'),
-    url('../fonts/CircularXX-Thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'CircularXX Light';
-  src: url('../fonts/CircularXX-Light.woff2') format('woff2'),
-    url('../fonts/CircularXX-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'CircularXX';
-  src: url('../fonts/CircularXX-Regular.woff2') format('woff2'),
-    url('../fonts/CircularXX-Regular.woff') format('woff');
+  font-family: 'appd_sans_tighterbold';
+  src        : url("../fonts/appdsanstighter-bold-webfont.woff2") format('woff2'), url("../fonts/appdsanstighter-bold-webfont.woff") format('woff');
   font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  font-style : normal;
 }
-
 @font-face {
-  font-family: 'CircularXX Medium';
-  src: url('../fonts/CircularXX-Medium.woff2') format('woff2'),
-    url('../fonts/CircularXX-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+  font-family: 'appd_sans_tighterheavy';
+  src        : url("../fonts/appdsanstighter-heavy-webfont.woff2") format('woff2'), url("../fonts/appdsanstighter-heavy-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style : normal;
 }
-
 @font-face {
-  font-family: 'CircularXX Bold';
-  src: url('../fonts/CircularXX-Bold.woff2') format('woff2'),
-    url('../fonts/CircularXX-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+  font-family: 'appd_sans_tightermedium';
+  src        : url("../fonts/appdsanstighter-medium-webfont.woff2") format('woff2'), url("../fonts/appdsanstighter-medium-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style : normal;
 }
-
 @font-face {
-  font-family: 'CircularXX Black';
-  src: url('../fonts/CircularXX-Black.woff2') format('woff2'),
-    url('../fonts/CircularXX-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+  font-family: 'appd_sans_tighterregular';
+  src        : url("../fonts/appdsanstighter-regular-webfont.woff2") format('woff2'), url("../fonts/appdsanstighter-regular-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style : normal;
 }
-
 @font-face {
-  font-family: 'CircularXX ExtraBlack';
-  src: url('../fonts/CircularXX-ExtraBlack.woff2') format('woff2'),
-    url('../fonts/CircularXX-ExtraBlack.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+  font-family: 'appd_sans_tighterlight';
+  src        : url("../fonts/appdsanstighter-light-webfont.woff2") format('woff2'), url("../fonts/appdsanstighter-light-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style : normal;
 }
