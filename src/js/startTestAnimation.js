@@ -1,10 +1,7 @@
 import { gsap } from 'gsap';
-const myFunction = () => {
-  console.log('my function');
-}
+
 const StartTest = () => {
-  console.log('start');
-  let tl = gsap.timeline({ defaults: { duration: 1, ease: 'power2.out' } });
+  let tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'power2.out' } });
   let introCopy = document.querySelector('.intro');
   let imageShape = document.querySelector('.background-elements .intro-img');
   let appContainer = document.querySelector('main.bg-dark');
@@ -54,11 +51,6 @@ const StartTest = () => {
         fill: '#725EFF',
       },
       'start'
-    )
-    //https://greensock.com/docs/v3/GSAP/Timeline/add()
-    .add(
-      myFunction, 
-      3 //time to execute
     )
     .to(
       mainShape,
