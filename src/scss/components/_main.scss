@@ -1,10 +1,10 @@
 .background-elements {
-  .intro-img { 
+  .intro-img {
     max-width: 490px;
     transform: translate(10%, 55px);
-    @media(min-width: 1280px) {
+    @media (min-width: 1280px) {
       max-width: 900px;
-      transform: translate(50%, 0)
+      transform: translate(50%, 0);
     }
   }
   .main-shape {
@@ -31,7 +31,7 @@
           &:hover {
             @apply bg-opacity-100;
           }
-  
+
           &:hover {
             @apply h-3 bg-primary;
           }
@@ -40,7 +40,11 @@
     }
   }
   .question {
-    @apply bg-white rounded-6 py-20 px-8 pb-44 w-full flex-shrink-0;
-    box-shadow: 0px 6px 6px 2px rgba(25,33,43,0.3);
+    @apply w-full flex-shrink-0;
+
+    .inner-question {
+      @apply bg-white rounded-6 py-20 px-8 pb-44 w-full;
+      box-shadow: 0px 6px 6px 2px rgba(25, 33, 43, 0.3);
+    }
   }
 }
