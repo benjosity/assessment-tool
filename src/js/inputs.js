@@ -1,6 +1,5 @@
 const elementSelect = input => {
   input.addEventListener('click', event => {
-    console.log(input.querySelectorAll('.input-value'));
     // Target for all inputs
     let inputWrapper = event.target.closest('.inputs');
     let otherInputsWrappers = inputWrapper.querySelectorAll('.input-element');
@@ -9,6 +8,7 @@ const elementSelect = input => {
     [].forEach.call(otherInputsWrappers, function (el) {
       el.classList.remove('selected');
     });
+
     [].forEach.call(otherInputsValues, function (el) {
       el.classList.remove('selected-value');
     });

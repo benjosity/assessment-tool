@@ -2,6 +2,7 @@ const navValidation = (activeQuestion, nextQuestion) => {
   let selectedInputs = nextQuestion.querySelectorAll('.input-element.selected');
   let prevButton = document.getElementById('prevButton');
   let nextButton = document.getElementById('nextButton');
+  let nextQuestionClasses = nextQuestion.classList;
 
   activeQuestion.classList.remove('active');
   nextQuestion.classList.add('active');

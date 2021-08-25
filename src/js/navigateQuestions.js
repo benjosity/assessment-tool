@@ -1,5 +1,6 @@
 import { gsap } from 'gsap';
 import navValidation from './navValidation';
+import updateSteps from './updateSteps';
 
 const nextQuestionSlide = (tl, containerHeight, container, activeQuestion) => {
   let nextQuestion = document.querySelector('.question.active').nextElementSibling;
@@ -47,6 +48,8 @@ const nextQuestionSlide = (tl, containerHeight, container, activeQuestion) => {
       },
       '+0.6'
     );
+
+  updateSteps(nextQuestion);
 };
 
 const prevQuestionSlide = (tl, containerHeight, container, activeQuestion) => {
@@ -105,6 +108,8 @@ const prevQuestionSlide = (tl, containerHeight, container, activeQuestion) => {
       },
       '+0.6'
     );
+
+  updateSteps(prevQuestion);
 };
 
 const navigateQuestions = buttonID => {
@@ -119,8 +124,6 @@ const navigateQuestions = buttonID => {
   } else {
     prevQuestionSlide(tl, containerHeight, container, activeQuestion);
   }
-
-  // Step Indicator
 };
 
 export default navigateQuestions;
