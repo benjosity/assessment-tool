@@ -22,8 +22,8 @@
 
 .pill {
   @apply bg-grey font-light mr-8;
+}
 
-  &.selected {
-    @apply bg-primary text-white;
-  }
+.selected .pill {
+  @apply bg-primary text-white;
 }

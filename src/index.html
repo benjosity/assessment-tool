@@ -64,10 +64,10 @@
               </div>
             </div>
           
-            <div class="col-span-12 overflow-hidden pb-8">
-              <div class="question-track flex flex-nowrap items-start">
+            <div class="col-span-12 pb-8">
+              <div id="question-container" class="question-track relative">
                 <!-- QUESTION 1 -->
-                <div class="question">
+                <div class="question question-1 relative z-10 active">
                   <div class="inner-question">
                     <div class="grid grid-cols-12 gap-8">
                       <div class="md:col-span-1 col-span-12">
@@ -80,17 +80,29 @@
                           <div class="input pill-type mt-20">
                             I have felt under immense pressure
                             <div class="pills flex justify-start items-start mt-8" data-question="1a">
-                              <div class="button pill" data-value="1">Yes - definitely</div>
-                              <div class="button pill" data-value="2">To some extent</div>
-                              <div class="button pill" data-value="3">Not particularly</div>
+                              <div class="input-element">
+                                <div class="input-value button pill" data-value="1">Yes - definitely</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill" data-value="2">To some extent</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill" data-value="3">Not particularly</div>
+                              </div>
                             </div>
                           </div>
                           <div class="input pill-type mt-20">
                             My job feels more complex
                             <div class="pills flex justify-start items-start mt-8" data-question="1b">
-                              <div class="button pill" data-value="1">Yes - definitely</div>
-                              <div class="button pill" data-value="2">To some extent</div>
-                              <div class="button pill" data-value="3">Not particularly</div>
+                              <div class="input-element">
+                                <div class="input-value button pill" data-value="1">Yes - definitely</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill" data-value="2">To some extent</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill" data-value="3">Not particularly</div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -99,7 +111,7 @@
                   </div>
                 </div>
                 <!-- QUESTION 2 -->
-                <div class="question">
+                <div class="question question-2 opacity-0 pointer-events-none absolute top-0 z-0 transform translate-y-full">
                   <div class="inner-question">
                     <div class="grid grid-cols-12 gap-8">
                       <div class="md:col-span-1 col-span-12">
@@ -112,17 +124,29 @@
                           <div class="input pill-type mt-20">
                             Compute and storage infrastructure (traditional or cloud) health and impact on applications and services 
                             <div class="pills flex justify-start items-start mt-8">
-                              <div class="button pill">Very important</div>
-                              <div class="button pill">Important</div>
-                              <div class="button pill">Not particularly important</div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Very important</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Important</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Not particularly important</div>
+                              </div>
                             </div>
                           </div>
                           <div class="input pill-type mt-20">
                             Network and infrastructure (traditional, cloud or WAN) health and impact on applications and services
                             <div class="pills flex justify-start items-start mt-8">
-                              <div class="button pill">Very important</div>
-                              <div class="button pill">Important</div>
-                              <div class="button pill">Not particularly important</div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Very important</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Important</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Not particularly important</div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -131,7 +155,7 @@
                   </div>
                 </div>
                 <!-- QUESTION 3 -->
-                <div class="question">
+                <div class="question question-3 opacity-0 pointer-events-none absolute top-0 z-0 transform translate-y-full">
                   <div class="inner-question">
                     <div class="grid grid-cols-12 gap-8">
                       <div class="md:col-span-1 col-span-12">
@@ -142,10 +166,18 @@
                         <div class="inputs">
                           <div class="input pill-type mt-20">
                             <div class="pills flex justify-start items-start mt-8">
-                              <div class="button pill">To a great extent</div>
-                              <div class="button pill">To some extent</div>
-                              <div class="button pill">Not particularly</div>
-                              <div class="button pill">Not at all</div>
+                              <div class="input-element">
+                                <div class="input-value button pill">To a great extent</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">To some extent</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Not particularly</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Not at all</div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -154,7 +186,7 @@
                   </div>
                 </div>
                 <!-- QUESTION 4 -->
-                <div class="question">
+                <div class="question question-4 opacity-0 pointer-events-none absolute top-0 z-0 transform translate-y-full">
                   <div class="inner-question">
                     <div class="grid grid-cols-12 gap-8">
                       <div class="md:col-span-1 col-span-12">
@@ -166,28 +198,28 @@
                         <div class="inputs">
                           <div class="input radio-type mt-10">
                             <div class="radios">
-                              <div class="radio flex justify-start items-start py-10">
+                              <div class="radio input-element flex justify-start items-start py-10">
                                 <div class="label font-medium">A</div>
                                 <div class="radio-question">We use a range of different tools to monitor the IT stack but the lack of a unified view often makes it hard for our teams to work together.</div>
-                                <div class="input rounded-full"></div>
+                                <div class="input-value input rounded-full"></div>
                               </div>
                             </div>
                           </div>
                           <div class="input radio-type">
                             <div class="radios">
-                              <div class="radio flex justify-start items-start py-10">
+                              <div class="radio input-element flex justify-start items-start py-10">
                                 <div class="label font-medium">B</div>
                                 <div class="radio-question">We use a range of different tools to monitor the IT stack but the lack of a unified view often makes it hard for our teams to work together.</div>
-                                <div class="input rounded-full"></div>
+                                <div class="input-value input rounded-full"></div>
                               </div>
                             </div>
                           </div>
                           <div class="input radio-type">
                             <div class="radios">
-                              <div class="radio flex justify-start items-start py-10">
+                              <div class="radio input-element flex justify-start items-start py-10">
                                 <div class="label font-medium">C</div>
                                 <div class="radio-question">We use a range of different tools to monitor the IT stack but the lack of a unified view often makes it hard for our teams to work together.</div>
-                                <div class="input rounded-full"></div>
+                                <div class="input-value input rounded-full"></div>
                               </div>
                             </div>
                           </div>
@@ -197,7 +229,7 @@
                   </div>
                 </div>
                 <!-- QUESTION 5 -->
-                <div class="question">
+                <div class="question question-5 opacity-0 pointer-events-none absolute top-0 z-0 transform translate-y-full">
                   <div class="inner-question">
                     <div class="grid grid-cols-12 gap-8">
                       <div class="md:col-span-1 col-span-12">
@@ -210,17 +242,29 @@
                           <div class="input pill-type mt-20">
                             I have felt under immense pressure
                             <div class="pills flex justify-start items-start mt-8">
-                              <div class="button pill">Yes - definitely</div>
-                              <div class="button pill">To some extent</div>
-                              <div class="button pill">Not particularly</div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Yes - definitely</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">To some extent</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Not particularly</div>
+                              </div>
                             </div>
                           </div>
                           <div class="input pill-type mt-20">
                             My job feels more complex
                             <div class="pills flex justify-start items-start mt-8">
-                              <div class="button pill">Yes - definitely</div>
-                              <div class="button pill">To some extent</div>
-                              <div class="button pill">Not particularly</div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Yes - definitely</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">To some extent</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Not particularly</div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -229,7 +273,7 @@
                   </div>
                 </div>
                 <!-- QUESTION 6 -->
-                <div class="question">
+                <div class="question question-6 opacity-0 pointer-events-none absolute top-0 z-0 transform translate-y-full">
                   <div class="inner-question">
                     <div class="grid grid-cols-12 gap-8">
                       <div class="md:col-span-1 col-span-12">
@@ -242,32 +286,32 @@
                           <div class="input radio-type-alt mt-20">
                             <div class="grid grid-cols-12 grid-rows-3 grid-flow-col gap-4 mt-8">
                               
-                                <div class="radio-alt lg:col-span-4 col-span-6">
-                                  <div class="input"></div>
+                                <div class="radio-alt input-element lg:col-span-4 col-span-6">
+                                  <div class="input input-value"></div>
                                   <div class="label">As soon as possible</div>
                                 </div>
-                                <div class="radio-alt lg:col-span-4 col-span-6">
-                                  <div class="input"></div>
+                                <div class="radio-alt input-element lg:col-span-4 col-span-6">
+                                  <div class="input input-value"></div>
                                   <div class="label">Within 24 months</div>
                                 </div>
                               
                               
-                                <div class="radio-alt lg:col-span-4 col-span-6">
-                                  <div class="input"></div>
+                                <div class="radio-alt input-element lg:col-span-4 col-span-6">
+                                  <div class="input input-value"></div>
                                   <div class="label">Within 6 months</div>
                                 </div>
-                                <div class="radio-alt lg:col-span-4 col-span-6">
-                                  <div class="input"></div>
+                                <div class="radio-alt input-element lg:col-span-4 col-span-6">
+                                  <div class="input input-value"></div>
                                   <div class="label">Longer term than this</div>
                                 </div>
                               
                               
-                                <div class="radio-alt lg:col-span-4 col-span-6">
-                                  <div class="input"></div>
+                                <div class="radio-alt input-element lg:col-span-4 col-span-6">
+                                  <div class="input input-value"></div>
                                   <div class="label">Within 12 months</div>
                                 </div>
-                                <div class="radio-alt lg:col-span-4 col-span-6">
-                                  <div class="input"></div>
+                                <div class="radio-alt input-element lg:col-span-4 col-span-6">
+                                  <div class="input input-value"></div>
                                   <div class="label">No current plans</div>
                                 </div>
                               
@@ -279,7 +323,7 @@
                   </div>
                 </div>
                 <!-- QUESTION 7 -->
-                <div class="question">
+                <div class="question question-7 opacity-0 pointer-events-none absolute top-0 z-0 transform translate-y-full">
                   <div class="inner-question">
                     <div class="grid grid-cols-12 gap-8">
                       <div class="md:col-span-1 col-span-12">
@@ -292,17 +336,29 @@
                           <div class="input pill-type mt-20">
                             I have felt under immense pressure
                             <div class="pills flex justify-start items-start mt-8">
-                              <div class="button pill">Yes - definitely</div>
-                              <div class="button pill">To some extent</div>
-                              <div class="button pill">Not particularly</div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Yes - definitely</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">To some extent</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Not particularly</div>
+                              </div>
                             </div>
                           </div>
                           <div class="input pill-type mt-20">
                             My job feels more complex
                             <div class="pills flex justify-start items-start mt-8">
-                              <div class="button pill">Yes - definitely</div>
-                              <div class="button pill">To some extent</div>
-                              <div class="button pill">Not particularly</div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Yes - definitely</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">To some extent</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Not particularly</div>
+                              </div>
                             </div>
                           </div>
                         </div>
