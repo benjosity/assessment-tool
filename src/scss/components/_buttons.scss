@@ -17,6 +17,14 @@
     @apply cursor-default opacity-50;
     background-color: #ebedf1 !important;
     color: #19212b !important;
+
+    &#resultsButton {
+      opacity: 0;
+
+      &.enabled {
+        opacity: 1;
+      }
+    }
   }
 }
 
