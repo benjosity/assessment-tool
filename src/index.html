@@ -187,21 +187,24 @@
                 </div>
                 <!-- QUESTION 4 -->
                 <div class="question question-4 opacity-0 pointer-events-none absolute top-0 z-0 transform translate-y-full" data-signpost="4">
-                  <div class="inner-question">
+                  <div class="inner-question overflow-y-scroll max-h-500">
                     <div class="grid grid-cols-12 gap-8">
                       <div class="md:col-span-1 col-span-12">
                         <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none"><path fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/><path fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/><path stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/></svg>
+                        <div class="down-indicator absolute bottom-20 left-14">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" fill="none"><path stroke="#19212B" stroke-width="1.2" d="M1 13l11.998 10.667L25 13M1 1l11.998 10.667L25 1"/></svg>
+                        </div>
                       </div>
                       <div class="lg:col-span-9 md:col-span-10 col-span-12">
                         <div class="text-6xl leading-tight">When it comes to observing your entire IT infrastructure and connecting IT performance to business outcomes, which of the following best describes your current capabilities?</div>
                         <div class="instruction uppercase font-light text-2xl mt-10">Please select only one</div>
-                        <div class="inputs">
+                        <div class="inputs valid-question" data-question="4">
                           <div class="input radio-type mt-10">
                             <div class="radios">
                               <div class="radio input-element flex justify-start items-start py-10">
                                 <div class="label font-medium">A</div>
                                 <div class="radio-question">We use a range of different tools to monitor the IT stack but the lack of a unified view often makes it hard for our teams to work together.</div>
-                                <div class="input-value input rounded-full"></div>
+                                <div class="input-value input rounded-full" data-value="A"></div>
                               </div>
                             </div>
                           </div>
@@ -210,7 +213,7 @@
                               <div class="radio input-element flex justify-start items-start py-10">
                                 <div class="label font-medium">B</div>
                                 <div class="radio-question">We use a range of different tools to monitor the IT stack but the lack of a unified view often makes it hard for our teams to work together.</div>
-                                <div class="input-value input rounded-full"></div>
+                                <div class="input-value input rounded-full" data-value="B"></div>
                               </div>
                             </div>
                           </div>
@@ -219,7 +222,43 @@
                               <div class="radio input-element flex justify-start items-start py-10">
                                 <div class="label font-medium">C</div>
                                 <div class="radio-question">We use a range of different tools to monitor the IT stack but the lack of a unified view often makes it hard for our teams to work together.</div>
-                                <div class="input-value input rounded-full"></div>
+                                <div class="input-value input rounded-full" data-value="C"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input radio-type">
+                            <div class="radios">
+                              <div class="radio input-element flex justify-start items-start py-10">
+                                <div class="label font-medium">D</div>
+                                <div class="radio-question">We have a detailed view on how IT performance impacts business KPIs in near real-time, but we struggle to understand the ROI of IT performance fixes on user experience and business KPIs.</div>
+                                <div class="input-value input rounded-full" data-value="D"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input radio-type">
+                            <div class="radios">
+                              <div class="radio input-element flex justify-start items-start py-10">
+                                <div class="label font-medium">E</div>
+                                <div class="radio-question">We can see how an IT performance fix positively impacts user experience and business outcomes, and view real-time metrics via dashboards, but we still find it a challenge to evaluate and sort issues in real-time, based on potential impact to the business. </div>
+                                <div class="input-value input rounded-full" data-value="E"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input radio-type">
+                            <div class="radios">
+                              <div class="radio input-element flex justify-start items-start py-10">
+                                <div class="label font-medium">F</div>
+                                <div class="radio-question">We can filter technology issues and tickets based on user experience and business impact, but we’re still reliant on manual intervention to address IT issues and relate them to business metrics.</div>
+                                <div class="input-value input rounded-full" data-value="F"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input radio-type">
+                            <div class="radios">
+                              <div class="radio input-element flex justify-start items-start py-10">
+                                <div class="label font-medium">G</div>
+                                <div class="radio-question">We have advanced automation that quickly detects the impact of technology anomalies on end user experience and business performance. We can automatically right-size supporting infrastructure and migrate workloads to optimize applications performance and maximize business outcomes.</div>
+                                <div class="input-value input rounded-full" data-value="G"></div>
                               </div>
                             </div>
                           </div>
@@ -236,37 +275,29 @@
                         <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none"><path fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/><path fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/><path stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/></svg>
                       </div>
                       <div class="lg:col-span-9 md:col-span-10 col-span-12">
-                        <div class="font-light text-h3 mb-7">Our research shows that, over the last 12 months, technologists were on average asked to deliver digital transformation projects three times faster than prior to the pandemic.</div>
-                        <div class="text-6xl leading-tight">How has this acceleration of digital transformation impacted you?</div>
+                        <div class="font-light text-h3 mb-7">How important will it be for your organization to directly correlate technology performance across the full IT stack with business outcomes to prioritize actions based on what will have the biggest impact?</div>
+                        <div class="instruction uppercase font-light text-2xl mt-10">Please select only one</div>
                         <div class="inputs">
                           <div class="input pill-type mt-20">
-                            I have felt under immense pressure
-                            <div class="pills flex justify-start items-start mt-8">
+                            <div class="pills valid-question flex justify-start items-start mt-8" data-question="5">
                               <div class="input-element">
-                                <div class="input-value button pill">Yes - definitely</div>
+                                <div class="input-value button pill" data-value="A">Yes - definitely</div>
                               </div>
                               <div class="input-element">
-                                <div class="input-value button pill">To some extent</div>
+                                <div class="input-value button pill" data-value="B">To some extent</div>
                               </div>
                               <div class="input-element">
-                                <div class="input-value button pill">Not particularly</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="input pill-type mt-20">
-                            My job feels more complex
-                            <div class="pills flex justify-start items-start mt-8">
-                              <div class="input-element">
-                                <div class="input-value button pill">Yes - definitely</div>
+                                <div class="input-value button pill" data-value="C">Not particularly</div>
                               </div>
                               <div class="input-element">
-                                <div class="input-value button pill">To some extent</div>
+                                <div class="input-value button pill" data-value="D">Not particularly</div>
                               </div>
                               <div class="input-element">
-                                <div class="input-value button pill">Not particularly</div>
+                                <div class="input-value button pill" data-value="E">Not particularly</div>
                               </div>
                             </div>
                           </div>
+                          
                         </div>
                       </div>
                     </div>

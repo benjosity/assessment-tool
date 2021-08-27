@@ -20,7 +20,7 @@ module.exports = {
         primary: '#725EFF',
         dark: '#19212B',
         purple: '#4E3EB1',
-        grey: '#EBEDF1'
+        grey: '#EBEDF1',
       },
       fontFamily: {
         header: 'appd_sans_tighterregular',
@@ -40,6 +40,9 @@ module.exports = {
       },
       borderRadius: {
         6: '0.6rem',
+      },
+      maxHeight: {
+        500: '50rem',
       },
     },
   },

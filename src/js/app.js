@@ -1,5 +1,6 @@
 import StartTest from './startTestAnimation';
 import navigateQuestions from './navigateQuestions';
+
 import './inputs.js';
 import '../scss/app.scss';
 

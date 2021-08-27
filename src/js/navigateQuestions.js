@@ -1,6 +1,7 @@
 import { gsap } from 'gsap';
 import navValidation from './navValidation';
 import updateSteps from './updateSteps';
+import calculateResults from './assessmentResults';
 
 const nextQuestionSlide = (tl, containerHeight, container, activeQuestion) => {
   let nextQuestion = document.querySelector('.question.active').nextElementSibling;
@@ -50,6 +51,7 @@ const nextQuestionSlide = (tl, containerHeight, container, activeQuestion) => {
     );
 
   updateSteps(nextQuestion);
+  calculateResults();
 };
 
 const prevQuestionSlide = (tl, containerHeight, container, activeQuestion) => {
@@ -110,6 +112,7 @@ const prevQuestionSlide = (tl, containerHeight, container, activeQuestion) => {
     );
 
   updateSteps(prevQuestion);
+  calculateResults();
 };
 
 const navigateQuestions = buttonID => {
