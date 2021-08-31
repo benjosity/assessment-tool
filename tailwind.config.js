@@ -38,6 +38,9 @@ module.exports = {
         18: '1.8rem',
         14: '1.4rem',
       },
+      letterSpacing: {
+        tightest: '-0.1em',
+      },
       borderRadius: {
         6: '0.6rem',
       },

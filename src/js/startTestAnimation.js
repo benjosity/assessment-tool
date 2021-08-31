@@ -4,8 +4,8 @@ const StartTest = () => {
   let tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'power2.out' } });
   let introCopy = document.querySelector('.intro');
   let imageShape = document.querySelector('.background-elements .intro-img');
-  let appContainer = document.querySelector('main.bg-dark');
-  let mainContainer = document.querySelector('main .container');
+  let appContainer = document.querySelector('.tool.bg-dark');
+  let mainContainer = document.querySelector('.tool .container');
   let mainShape = document.querySelector('.background-elements .main-shape');
   let mainShapeSVG = document.querySelector('.background-elements .main-shape svg');
   let mainShapeSVGinner = document.querySelector('.background-elements .main-shape svg .inner');
@@ -20,7 +20,7 @@ const StartTest = () => {
       height: 0,
     },
     'start'
-    )
+  )
     .to(
       questionContainer,
       {
@@ -100,7 +100,8 @@ const StartTest = () => {
         duration: 0.4,
       },
       '+0.9'
-    ).to(
+    )
+    .to(
       questionsBottom,
       {
         opacity: 1,

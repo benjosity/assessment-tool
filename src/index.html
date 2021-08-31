@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <main class="bg-dark overflow-hidden">
+    <div class="tool bg-dark overflow-hidden">
       <div class="container pt-60 pb-96 relative">
         
         <div class="background-elements h-full w-full absolute top-0 bottom-0 z-0">
@@ -274,26 +274,26 @@
                       <div class="md:col-span-1 col-span-12">
                         <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none"><path fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/><path fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/><path stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/></svg>
                       </div>
-                      <div class="lg:col-span-9 md:col-span-10 col-span-12">
+                      <div class="md:col-span-10 col-span-12">
                         <div class="font-light text-h3 mb-7">How important will it be for your organization to directly correlate technology performance across the full IT stack with business outcomes to prioritize actions based on what will have the biggest impact?</div>
                         <div class="instruction uppercase font-light text-2xl mt-10">Please select only one</div>
                         <div class="inputs">
                           <div class="input pill-type mt-20">
-                            <div class="pills valid-question flex justify-start items-start mt-8" data-question="5">
-                              <div class="input-element">
-                                <div class="input-value button pill" data-value="A">Yes - definitely</div>
+                            <div class="pills valid-question flex flex-wrap justify-start items-start mt-8" data-question="5">
+                              <div class="input-element mb-6">
+                                <div class="input-value button pill text-xl" data-value="A">Critical</div>
                               </div>
-                              <div class="input-element">
-                                <div class="input-value button pill" data-value="B">To some extent</div>
+                              <div class="input-element mb-6">
+                                <div class="input-value button pill text-xl" data-value="B">Important</div>
                               </div>
-                              <div class="input-element">
-                                <div class="input-value button pill" data-value="C">Not particularly</div>
+                              <div class="input-element mb-6">
+                                <div class="input-value button pill text-xl" data-value="C">Quite important</div>
                               </div>
-                              <div class="input-element">
-                                <div class="input-value button pill" data-value="D">Not particularly</div>
+                              <div class="input-element mb-6">
+                                <div class="input-value button pill text-xl" data-value="D">Not particularly important</div>
                               </div>
-                              <div class="input-element">
-                                <div class="input-value button pill" data-value="E">Not particularly</div>
+                              <div class="input-element mb-6">
+                                <div class="input-value button pill text-xl" data-value="E">Not at all Important</div>
                               </div>
                             </div>
                           </div>
@@ -419,7 +419,48 @@
         </div>
 
       </div>
-    </main>
+    </div>
+    <div class="results-form py-20">
+      <div class="container grid grid-cols-12 gap-8">
+        <div class="lg:col-span-5 lg:col-start-2 sm:col-span-6 col-span-12">
+          <h2>Get your full results</h2>
+          <p>Fill in the form to access your full results and discover:</p>
+          <ul>
+            <li>How you can accelerate your organization’s journey to Business Observability</li>
+            <li>The game-changing benefits of connecting full-stack observability with business outcomes</li>
+            <li>How other technologists are managing heightened IT complexity and the pressure to deliver rapid digital transformation within their organizations</li>
+            <li>Useful resources to assist you on your journey to Business Observability </li>
+          </ul>
+          <p>We'll email you a PDF version of your results.</p>
+          <div class="fact-block p-8 bg-purple text-white">
+            <h3>Did you know?</h3>
+            <span class="text-9xl tracking-tightest">96<sup class="text-7xl">%</sup></span><br>
+            <p>of technologists state that having the ability to monitor their entire IT stack and directly link technical performance to business outcomes is vital to their ability to deliver first-class digital experiences and accelerate digital transformation in 2021 and beyond.</p>
+          </div>
+        </div>
+        <div class="lg:col-span-5 sm:col-span-6 col-span-12">
+          <div class="form-wrap p-16">
+            <h2 class="font-light text-center mb-8">Heading lorem ipsum</h2>
+            <form action="">
+              <input type="text" name="firstname" placeholder="First Name">
+              <input type="text" name="lastname" placeholder="Last Name">
+              <input type="email" name="email" placeholder="Work Email Address">
+              <input type="text" name="company" placeholder="Company Name">
+              <input type="text" name="job" placeholder="Job Title">
+              <input type="tel" name="phone" placeholder="Phone Number">
+              <input type="hidden" name="result">
+              <label for="tc">
+                <input type="checkbox" name="tc" id="">
+                <div class="label">
+                  I have read and understood the <a href="#" target="_blank">AppDynamics Privacy Policy</a>.
+                </div>
+              </label>
+              <input type="submit" value="">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     
 
   </body>

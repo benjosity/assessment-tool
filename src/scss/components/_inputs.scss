@@ -84,3 +84,16 @@
     }
   }
 }
+
+.form-wrap {
+  border: 1px solid #ebedf1;
+  box-shadow: 0px 6px 6px 2px rgba(140, 144, 149, 0.2);
+
+  input[type='text'],
+  input[type='tel'],
+  input[type='email'] {
+    @apply w-full rounded-full py-2 px-4 mb-4;
+    background: linear-gradient(0deg, #ffffff, #ffffff);
+    border: 1px solid #8c9095;
+  }
+}
