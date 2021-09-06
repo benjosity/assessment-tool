@@ -1,7 +1,7 @@
 const elementSelect = input => {
   input.addEventListener('click', event => {
     // Target for all inputs
-    let inputWrapper = event.target.closest('.inputs');
+    let inputWrapper = event.target.closest('.input-container');
     let otherInputsWrappers = inputWrapper.querySelectorAll('.input-element');
     let otherInputsValues = inputWrapper.querySelectorAll('.input-value');
 

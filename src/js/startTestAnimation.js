@@ -30,14 +30,6 @@ const StartTest = () => {
       'start'
     )
     .to(
-      mainContainer,
-      {
-        paddingTop: '90px',
-        paddingBottom: '175px',
-      },
-      'start'
-    )
-    .to(
       imageShape,
       {
         xPercent: -50,

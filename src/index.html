@@ -12,7 +12,7 @@
   <body>
 
     <div class="tool bg-dark overflow-hidden">
-      <div class="container pt-60 pb-96 relative">
+      <div class="container py-40 relative">
         
         <div class="background-elements h-full w-full absolute top-0 bottom-0 z-0">
           <div class="intro-img absolute right-0 bottom-0 z-0">
@@ -77,7 +77,7 @@
                         <div class="font-light text-h3 mb-7">Our research shows that, over the last 12 months, technologists were on average asked to deliver digital transformation projects three times faster than prior to the pandemic.</div>
                         <div class="text-6xl leading-tight">How has this acceleration of digital transformation impacted you?</div>
                         <div class="inputs">
-                          <div class="input pill-type mt-20">
+                          <div class="input-container input pill-type mt-20">
                             I have felt under immense pressure
                             <div class="pills flex justify-start items-start mt-8" data-question="1a">
                               <div class="input-element">
@@ -91,7 +91,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="input pill-type mt-20">
+                          <div class="input-container input pill-type mt-20">
                             My job feels more complex
                             <div class="pills flex justify-start items-start mt-8" data-question="1b">
                               <div class="input-element">
@@ -121,7 +121,7 @@
                         <div class="font-light text-h3 mb-7">A year of rapid digital transformation has led to soaring levels of IT complexity in many organizations. In response, technologists have recognized the need to monitor the full IT estate, from traditional, legacy IT systems through to new, hybrid cloud environments.</div>
                         <div class="text-6xl leading-tight">How important is it for you to monitor the following areas of your IT stack to cope with heightened complexity?</div>
                         <div class="inputs">
-                          <div class="input pill-type mt-20">
+                          <div class="input-container input pill-type mt-20">
                             Compute and storage infrastructure (traditional or cloud) health and impact on applications and services 
                             <div class="pills flex justify-start items-start mt-8">
                               <div class="input-element">
@@ -135,7 +135,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="input pill-type mt-20">
+                          <div class="input-container input pill-type mt-20">
                             Network and infrastructure (traditional, cloud or WAN) health and impact on applications and services
                             <div class="pills flex justify-start items-start mt-8">
                               <div class="input-element">
@@ -164,7 +164,7 @@
                       <div class="lg:col-span-9 md:col-span-10 col-span-12">
                         <div class="text-6xl leading-tight">To what extent have high data volumes caused by additional monitoring contributed to increased IT complexity in your organization?</div>
                         <div class="inputs">
-                          <div class="input pill-type mt-20">
+                          <div class="input-container input pill-type mt-20">
                             <div class="pills flex justify-start items-start mt-8">
                               <div class="input-element">
                                 <div class="input-value button pill">To a great extent</div>
@@ -198,7 +198,7 @@
                       <div class="lg:col-span-9 md:col-span-10 col-span-12">
                         <div class="text-6xl leading-tight">When it comes to observing your entire IT infrastructure and connecting IT performance to business outcomes, which of the following best describes your current capabilities?</div>
                         <div class="instruction uppercase font-light text-2xl mt-10">Please select only one</div>
-                        <div class="inputs valid-question" data-question="4">
+                        <div class="input-container inputs valid-question" data-question="4">
                           <div class="input radio-type mt-10">
                             <div class="radios">
                               <div class="radio input-element flex justify-start items-start py-10">
@@ -278,7 +278,7 @@
                         <div class="font-light text-h3 mb-7">How important will it be for your organization to directly correlate technology performance across the full IT stack with business outcomes to prioritize actions based on what will have the biggest impact?</div>
                         <div class="instruction uppercase font-light text-2xl mt-10">Please select only one</div>
                         <div class="inputs">
-                          <div class="input pill-type mt-20">
+                          <div class="input-container input pill-type mt-20">
                             <div class="pills valid-question flex flex-wrap justify-start items-start mt-8" data-question="5">
                               <div class="input-element mb-6">
                                 <div class="input-value button pill text-xl" data-value="A">Critical</div>
@@ -297,7 +297,6 @@
                               </div>
                             </div>
                           </div>
-                          
                         </div>
                       </div>
                     </div>
@@ -314,7 +313,7 @@
                         <div class="text-6xl leading-tight">In what timeframe do you anticipate your organization implementing full-stack observability linked to business outcomes?</div>
                         <div class="instruction uppercase font-light text-2xl mt-10">Please select only one</div>
                         <div class="inputs">
-                          <div class="input radio-type-alt mt-20">
+                          <div class="input-container input radio-type-alt mt-20">
                             <div class="grid grid-cols-12 grid-rows-3 grid-flow-col gap-4 mt-8">
                               
                                 <div class="radio-alt input-element lg:col-span-4 col-span-6">
@@ -360,35 +359,46 @@
                       <div class="md:col-span-1 col-span-12">
                         <svg class="ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none"><path fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/><path fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/><path stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/></svg>
                       </div>
-                      <div class="lg:col-span-9 md:col-span-10 col-span-12">
-                        <div class="font-light text-h3 mb-7">Our research shows that, over the last 12 months, technologists were on average asked to deliver digital transformation projects three times faster than prior to the pandemic.</div>
-                        <div class="text-6xl leading-tight">How has this acceleration of digital transformation impacted you?</div>
+                      <div class="md:col-span-11 col-span-12">
+                        <div class="text-6xl leading-tight">Finally, to what extent do you agree or disagree that the inability to connect full-stack observability with business performance will:</div>
                         <div class="inputs">
-                          <div class="input pill-type mt-20">
-                            I have felt under immense pressure
+                          <div class="input-container input pill-type mt-20">
+                            Be detrimental to your business in 2021?
                             <div class="pills flex justify-start items-start mt-8">
                               <div class="input-element">
-                                <div class="input-value button pill">Yes - definitely</div>
+                                <div class="input-value button pill">Strongly agree</div>
                               </div>
                               <div class="input-element">
-                                <div class="input-value button pill">To some extent</div>
+                                <div class="input-value button pill">Tend to agree</div>
                               </div>
                               <div class="input-element">
-                                <div class="input-value button pill">Not particularly</div>
+                                <div class="input-value button pill">Tend to disagree</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Strongly disagree</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Don’t know</div>
                               </div>
                             </div>
                           </div>
-                          <div class="input pill-type mt-20">
-                            My job feels more complex
+                          <div class="input-container input pill-type mt-20">
+                            Hinder you from achieving your personal career goals?
                             <div class="pills flex justify-start items-start mt-8">
                               <div class="input-element">
-                                <div class="input-value button pill">Yes - definitely</div>
+                                <div class="input-value button pill">Strongly agree</div>
                               </div>
                               <div class="input-element">
-                                <div class="input-value button pill">To some extent</div>
+                                <div class="input-value button pill">Tend to agree</div>
                               </div>
                               <div class="input-element">
-                                <div class="input-value button pill">Not particularly</div>
+                                <div class="input-value button pill">Tend to disagree</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Strongly disagree</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill">Don’t know</div>
                               </div>
                             </div>
                           </div>
@@ -432,10 +442,15 @@
             <li>Useful resources to assist you on your journey to Business Observability </li>
           </ul>
           <p>We'll email you a PDF version of your results.</p>
-          <div class="fact-block p-8 bg-purple text-white">
+          <div class="fact-block mt-12 p-8 bg-primary text-white relative">
             <h3>Did you know?</h3>
             <span class="text-9xl tracking-tightest">96<sup class="text-7xl">%</sup></span><br>
             <p>of technologists state that having the ability to monitor their entire IT stack and directly link technical performance to business outcomes is vital to their ability to deliver first-class digital experiences and accelerate digital transformation in 2021 and beyond.</p>
+            <div class="shape absolute right-0 top-0">
+              <svg width="114" height="118" viewBox="0 0 114 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M134 -17L74.3238 118H0L59.6762 -17H134Z" fill="#4E3EB1"/>
+                </svg>                
+            </div>
           </div>
         </div>
         <div class="lg:col-span-5 sm:col-span-6 col-span-12">
@@ -449,19 +464,16 @@
               <input type="text" name="job" placeholder="Job Title">
               <input type="tel" name="phone" placeholder="Phone Number">
               <input type="hidden" name="result">
-              <label for="tc">
-                <input type="checkbox" name="tc" id="">
-                <div class="label">
-                  I have read and understood the <a href="#" target="_blank">AppDynamics Privacy Policy</a>.
-                </div>
-              </label>
-              <input type="submit" value="">
+              <label class="check-container">I have read and understood the <a href="#" target="_blank"></a>AppDynamics Privacy Policy</a>.
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>              
+              <input type="submit" value="Submit">
             </form>
           </div>
         </div>
       </div>
     </div>
-    
 
   </body>
 </html>
