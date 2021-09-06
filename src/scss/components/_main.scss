@@ -53,3 +53,9 @@
     }
   }
 }
+
+.results-top {
+  .result-text {
+    @apply hidden;
+  }
+}

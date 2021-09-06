@@ -1,8 +1,13 @@
 import { gsap } from 'gsap';
 const navValidation = (activeQuestion, nextQuestion) => {
+  let inputNum = nextQuestion.querySelectorAll('.input-container');
   let selectedInputs = nextQuestion.querySelectorAll('.input-element.selected');
   let prevButton = document.getElementById('prevButton');
   let nextButton = document.getElementById('nextButton');
+
+  console.log(nextQuestion);
+  console.log(activeQuestion);
+  console.log(inputNum);
 
   activeQuestion.classList.remove('active');
   nextQuestion.classList.add('active');
@@ -22,7 +27,7 @@ const navValidation = (activeQuestion, nextQuestion) => {
   if (typeof selectedInputs !== 'undefined' && selectedInputs.length === 0) {
     nextButton.classList.remove('enabled');
     nextButton.classList.add('disabled');
-  } else {
+  } else if (selectedInputs.length === inputNum.length) {
     nextButton.classList.add('enabled');
     nextButton.classList.remove('disabled');
   }

@@ -1,18 +1,16 @@
 import { gsap } from 'gsap';
 
-const StartTest = () => {
+const ViewResults = () => {
   let tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'power2.out' } });
-  let introCopy = document.querySelector('.intro');
+  let resultTop = document.querySelector('.results-top');
   let imageShape = document.querySelector('.background-elements .intro-img');
   let appContainer = document.querySelector('.tool.bg-dark');
   let mainShape = document.querySelector('.background-elements .main-shape');
   let mainShapeSVG = document.querySelector('.background-elements .main-shape svg');
   let mainShapeSVGinner = document.querySelector('.background-elements .main-shape svg .inner');
   let questionContainer = document.querySelector('.questions');
-  let questionsTop = document.querySelector('.questions-top');
-  let questionsBottom = document.querySelector('.questions-bottom');
   tl.to(
-    introCopy,
+    questionContainer,
     {
       opacity: 0,
       pointerEvents: 'none',
@@ -21,7 +19,7 @@ const StartTest = () => {
     'start'
   )
     .to(
-      questionContainer,
+      resultTop,
       {
         height: 'auto',
         pointerEvents: 'auto',
@@ -31,43 +29,45 @@ const StartTest = () => {
     .to(
       imageShape,
       {
-        xPercent: -50,
-        yPercent: 100,
+        xPercent: 0,
+        yPercent: 0,
       },
       'start'
     )
     .to(
       mainShapeSVGinner,
       {
-        fill: '#725EFF',
+        fill: 'transparent',
       },
       'start'
     )
     .to(
       mainShape,
       {
-        top: '-20%',
-        left: 0,
-        scale: 1.5,
+        top: 'auto',
+        left: 'auto',
+        bottom: '-28%',
+        right: '25%',
+        scale: 1,
       },
       '0.3'
     )
     .to(
       mainShapeSVG,
       {
-        scale: 4,
+        scale: 1,
       },
       '+0.3'
     )
     .to(
       appContainer,
       {
-        backgroundColor: '#4e3eb1',
+        backgroundColor: '#19212B',
       },
       '+0.3'
     )
     .to(
-      introCopy,
+      questionContainer,
       {
         height: '0',
         pointerEvents: 'none',
@@ -76,31 +76,13 @@ const StartTest = () => {
       '+0.3'
     )
     .to(
-      questionContainer,
+      resultTop,
       {
         opacity: 1,
         duration: 0.5,
       },
       '+0.6'
-    )
-    .to(
-      questionsTop,
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.4,
-      },
-      '+0.9'
-    )
-    .to(
-      questionsBottom,
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.4,
-      },
-      '+0.9'
     );
 };
 
-export default StartTest;
+export default ViewResults;

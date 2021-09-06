@@ -1,11 +1,14 @@
 import StartTest from './startTestAnimation';
 import navigateQuestions from './navigateQuestions';
+import getResults from './assessmentResults';
 
 import './inputs.js';
 import '../scss/app.scss';
 
 // Start Tool
 document.querySelector('.start-test').addEventListener('click', () => StartTest());
+
+document.querySelector('#resultsButton').addEventListener('click', () => getResults());
 
 // Navigate Tool
 document.body.addEventListener('click', function (event) {
