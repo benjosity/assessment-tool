@@ -26,7 +26,7 @@ const calculateResults = answers => {
   }
 
   // Update HTML list on lower results section
-  if (level == '5') {
+  if (level === '5' || level === '4') {
     document.getElementById('high-tier').style.display = 'block';
   } else {
     document.getElementById('low-tier').style.display = 'block';

@@ -3,6 +3,8 @@ import { gsap } from 'gsap';
 const ViewResults = () => {
   let tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'power2.out' } });
   let resultTop = document.querySelector('.results-top');
+  let resultBottom = document.querySelector('.results-form');
+  let rbContainer = resultBottom.querySelector('.container');
   let imageShape = document.querySelector('.background-elements .intro-img');
   let appContainer = document.querySelector('.tool.bg-dark');
   let mainShape = document.querySelector('.background-elements .main-shape');
@@ -82,6 +84,21 @@ const ViewResults = () => {
         duration: 0.5,
       },
       '+0.6'
+    )
+    .to(
+      resultBottom,
+      {
+        height: 'auto',
+        opacity: 1,
+      },
+      '+0.6'
+    )
+    .to(
+      rbContainer,
+      {
+        opacity: 1,
+      },
+      '+0.9'
     );
 };
 
