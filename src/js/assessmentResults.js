@@ -37,11 +37,11 @@ const calculateResults = answers => {
     appetite = 'A';
   } else {
     appetite = 'B';
+    document.getElementById('fact-block').style.display = 'hidden';
   }
 
   // Show main results copy
   const result = level + '' + appetite;
-  console.log(result);
   document.querySelector("[data-result='" + result + "']").style.display = 'block';
 
   ViewResults();

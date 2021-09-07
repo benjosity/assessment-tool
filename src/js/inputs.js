@@ -4,8 +4,7 @@ const checkInputs = inputTarget => {
   let questionWrapper = inputTarget.target.closest('.question');
   let inputNum = questionWrapper.querySelectorAll('.input-container');
   let selectedInputs = questionWrapper.querySelectorAll('.input-element.selected');
-  console.log(inputNum.length);
-  console.log(selectedInputs.length);
+
   // Next Button Activation
   if (inputNum.length == selectedInputs.length) {
     document.getElementById('nextButton').classList.remove('disabled');

@@ -5,10 +5,6 @@ const navValidation = (activeQuestion, nextQuestion) => {
   let prevButton = document.getElementById('prevButton');
   let nextButton = document.getElementById('nextButton');
 
-  console.log(nextQuestion);
-  console.log(activeQuestion);
-  console.log(inputNum);
-
   activeQuestion.classList.remove('active');
   nextQuestion.classList.add('active');
 
