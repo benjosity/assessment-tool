@@ -16,9 +16,13 @@ html {
 
 body {
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: 'appd_sans_tighterlight';
   line-height: 1.4;
+
+  @media (min-width: 640px) {
+    font-size: 1.8rem;
+  }
 }
 
 body,

@@ -3,8 +3,12 @@
     @apply transition-all duration-300 ease-in cursor-pointer;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
-    .radio-question {
-      margin-left: 5.7rem;
+    .radio-question,
+    .input {
+      margin-left: 1.7rem;
+      @media (min-width: 640px) {
+        margin-left: 5.7rem;
+      }
     }
 
     .label,
@@ -13,7 +17,6 @@
     }
 
     .input {
-      margin-left: 5.7rem;
       width: 3.8rem;
       height: 3.8rem;
       border: 2px solid #d8d8d8;

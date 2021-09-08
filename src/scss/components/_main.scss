@@ -48,7 +48,11 @@
       @apply w-full flex-shrink-0;
 
       .inner-question {
-        @apply w-full py-20 px-8 pb-44;
+        @apply w-full py-20 px-8;
+
+        @media (min-width: 640px) {
+          @apply pb-44;
+        }
       }
     }
   }
