@@ -92,18 +92,52 @@
   border: 1px solid #ebedf1;
   box-shadow: 0px 6px 6px 2px rgba(140, 144, 149, 0.2);
 
-  input[type='text'],
-  input[type='tel'],
-  input[type='email'] {
-    @apply w-full rounded-full py-3 px-4 mb-8 transition-all ease-in duration-300;
+  .mktoForm input[type='text'],
+  .mktoForm input[type='url'],
+  .mktoForm input[type='email'],
+  .mktoForm input[type='tel'],
+  .mktoForm input[type='number'],
+  .mktoForm input[type='date'],
+  .mktoForm textarea.mktoField,
+  .mktoForm select.mktoField {
+    @apply block w-full py-3 px-4 transition-all ease-in duration-300;
     background-color: #ffffff;
     border: 1px solid #8c9095;
+    border-radius: 9999px !important;
+    font-size: 1.8rem !important;
+    margin-bottom: 0.5rem;
 
     &:hover,
     &:active,
     &:focus {
       background-color: #ebedf1;
     }
+  }
+
+  input[type='checkbox'] {
+    appearance: auto;
+  }
+
+  .mktoForm .mktoFormCol {
+    width: 100%;
+    float: none;
+  }
+
+  .mktoForm .mktoField {
+    font-size: 1.6rem !important;
+
+    @media (min-width: 640px) {
+      font-size: 1.8rem !important;
+    }
+  }
+
+  .mktoForm .mktoLabel {
+    float: none !important;
+  }
+
+  .mktoErrorMsg {
+    color: #d44141;
+    font-size: 1.4rem;
   }
 
   input[type='submit'] {

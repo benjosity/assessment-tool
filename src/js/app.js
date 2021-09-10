@@ -1,6 +1,7 @@
 import StartTest from './startTestAnimation';
 import navigateQuestions from './navigateQuestions';
 import getResults from './assessmentResults';
+import mktoForm from './form/marketoForm';
 
 import './inputs.js';
 import '../scss/app.scss';
@@ -20,3 +21,6 @@ document.body.addEventListener('click', function (event) {
     navigateQuestions(buttonID);
   }
 });
+
+// Load Results Form
+mktoForm();

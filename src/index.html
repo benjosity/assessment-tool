@@ -7,11 +7,12 @@
     <meta name="keywords" content="croc">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="The Croc">
+    <script src="//app-abd.marketo.com/js/forms2/js/forms2.min.js"></script>
     
   </head>
   <body>
 
-    <div id="appd-assessment">
+    <div id="appd-assessment"></div>
       <div class="tool bg-dark overflow-hidden">
         <div class="container sm:pt-40 sm:pb-40 pt-20 relative">
           
@@ -192,7 +193,7 @@
                       <div class="grid grid-cols-12 gap-8">
                         <div class="md:col-span-1 col-span-12">
                           <svg class="sm:ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none"><path fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/><path fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/><path stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/></svg>
-                          <div class="down-indicator absolute bottom-20 left-14">
+                          <div class="down-indicator absolute bottom-20 left-14 sm:block hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" fill="none"><path stroke="#19212B" stroke-width="1.2" d="M1 13l11.998 10.667L25 13M1 1l11.998 10.667L25 1"/></svg>
                           </div>
                         </div>
@@ -281,19 +282,19 @@
                           <div class="inputs">
                             <div class="input-container input pill-type sm:mt-20 mt-10">
                               <div class="pills valid-question flex flex-wrap justify-start items-start mt-8" data-question="5">
-                                <div class="input-element mb-6">
+                                <div class="input-element mb-6 sm:w-auto w-full">
                                   <div class="input-value button pill text-xl" data-value="A">Critical</div>
                                 </div>
-                                <div class="input-element mb-6">
+                                <div class="input-element mb-6 sm:w-auto w-full">
                                   <div class="input-value button pill text-xl" data-value="B">Important</div>
                                 </div>
-                                <div class="input-element mb-6">
+                                <div class="input-element mb-6 sm:w-auto w-full">
                                   <div class="input-value button pill text-xl" data-value="C">Quite important</div>
                                 </div>
-                                <div class="input-element mb-6">
+                                <div class="input-element mb-6 sm:w-auto w-full">
                                   <div class="input-value button pill text-xl" data-value="D">Not particularly important</div>
                                 </div>
-                                <div class="input-element mb-6">
+                                <div class="input-element mb-6 sm:w-auto w-full">
                                   <div class="input-value button pill text-xl" data-value="E">Not at all important</div>
                                 </div>
                               </div>
@@ -314,36 +315,36 @@
                           <div class="sm:text-6xl text-4xl leading-tight">In what timeframe do you anticipate your organization implementing full-stack observability linked to business outcomes?</div>
                           <div class="instruction uppercase font-light text-2xl mt-10">Please select only one</div>
                           <div class="inputs">
-                            <div class="input-container input radio-type-alt mt-20">
-                              <div class="grid grid-cols-12 grid-rows-3 grid-flow-col gap-4 mt-8">
+                            <div class="input-container input radio-type-alt sm:mt-20 mt-8">
+                              <div class="sm:grid grid-cols-12 grid-rows-3 grid-flow-col gap-4 mt-8 flex flex-wrap">
                                 
-                                  <div class="radio-alt input-element lg:col-span-4 col-span-6">
+                                  <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-1">
                                     <div class="input input-value"></div>
                                     <div class="label">As soon as possible</div>
                                   </div>
   
-                                  <div class="radio-alt input-element lg:col-span-4 col-span-6">
+                                  <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-3">
                                     <div class="input input-value"></div>
                                     <div class="label">Within 12 months</div>
                                   </div>
   
-                                  <div class="radio-alt input-element lg:col-span-4 col-span-6">
+                                  <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-5">
                                     <div class="input input-value"></div>
                                     <div class="label">Longer term than this</div>
                                   </div>
   
-                                  <div class="radio-alt input-element lg:col-span-4 col-span-6">
+                                  <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-2">
                                     <div class="input input-value"></div>
                                     <div class="label">Within 6 months</div>
                                   </div>
                                 
   
-                                  <div class="radio-alt input-element lg:col-span-4 col-span-6">
+                                  <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-4">
                                     <div class="input input-value"></div>
                                     <div class="label">Within 24 months</div>
                                   </div>
                                   
-                                  <div class="radio-alt input-element lg:col-span-4 col-span-6">
+                                  <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-6">
                                     <div class="input input-value"></div>
                                     <div class="label">No current plans</div>
                                   </div>
@@ -433,16 +434,16 @@
   
           <div class="results-top text-white relative z-10 opacity-0 h-0 pointer-events-none">
             <div class="grid grid-cols-12 gap-8">
-              <div class="col-span-1 text-right">
+              <div class="col-span-1 sm:block hidden text-right">
                 <svg class="sm:ml-auto" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M66 33V0C48.576 0 31.68 6.86405 19.272 19.272C6.86397 31.68 0 48.312 0 66H33C33 47.784 47.784 33 66 33Z" fill="#4E3EB1"/>
                 </svg>
               </div>
-              <div class="col-span-10">
+              <div class="sm:col-span-10 col-span-12">
                 <h1 class="text-h3 mb-4">Thanks for taking the time to complete the questionnaire.</h1>
                 <h2 class="text-h1 font-light">Based on your responses, today your organization is at '<span id="result-title">Level 0: Full-Stack Observability</span>'.</h2>
               </div>
-              <div class="col-span-8 col-start-2 text-3xl">
+              <div class="sm:col-span-8 col-span-12 sm:col-start-2 sm:text-3xl text-2xl sm:pb-0 pb-80">
                 <div class="result-text" data-result="0A">
                   <p>You can see performance data across your IT estate, from customer-facing applications down to core infrastructure. And you clearly understand the importance of linking IT performance to business outcomes to deliver faultless digital experience and drive accelerated innovation. </p>
                   <p>Well done! You’ve got the essential foundations in place to start your journey towards full-stack observability with business context.</p>
@@ -561,7 +562,8 @@
           <div class="lg:col-span-5 sm:col-span-6 col-span-12">
             <div class="form-wrap p-16">
               <h2 class="font-light text-center mb-8">Heading lorem ipsum</h2>
-              <form action="">
+              <form id="mktoForm_3339"></form>
+              <!-- <form action="">
                 <input type="text" name="firstname" placeholder="First Name">
                 <input type="text" name="lastname" placeholder="Last Name">
                 <input type="email" name="email" placeholder="Work Email Address">
@@ -574,7 +576,11 @@
                   <span class="checkmark"></span>
                 </label>              
                 <input type="submit" value="Submit">
-              </form>
+              </form> -->
+            </div>
+            <div class="thank-you opacity-0 h-0 pointer-events-none overflow-hidden">
+              <h2 class="font-light text-center mb-8">Your Results</h2>
+              Thank you for your submission. <a href="">Here is your full results PDF</a>
             </div>
           </div>
         </div>

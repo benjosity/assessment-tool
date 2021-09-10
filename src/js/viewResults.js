@@ -11,6 +11,13 @@ const ViewResults = () => {
   let mainShapeSVG = document.querySelector('.background-elements .main-shape svg');
   let mainShapeSVGinner = document.querySelector('.background-elements .main-shape svg .inner');
   let questionContainer = document.querySelector('.questions');
+  let shapeY = '-28%';
+  let shapeX = '25%';
+  if (window.innerWidth < 640) {
+    shapeY = '-22%';
+    shapeX = '-36%';
+  }
+
   tl.to(
     questionContainer,
     {
@@ -48,8 +55,8 @@ const ViewResults = () => {
       {
         top: 'auto',
         left: 'auto',
-        bottom: '-28%',
-        right: '25%',
+        bottom: shapeY,
+        right: shapeX,
         scale: 1,
       },
       '0.3'
@@ -89,6 +96,7 @@ const ViewResults = () => {
       resultBottom,
       {
         height: 'auto',
+        pointerEvents: 'auto',
         opacity: 1,
       },
       '+0.6'
