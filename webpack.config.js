@@ -15,10 +15,10 @@ const environment = require('./configuration/environment');
 
 const templateFiles = fs
   .readdirSync(environment.paths.source)
-  .filter((file) => path.extname(file).toLowerCase() === '.html');
+  .filter(file => path.extname(file).toLowerCase() === '.html');
 
 const htmlPluginEntries = templateFiles.map(
-  (template) =>
+  template =>
     new HTMLWebpackPlugin({
       inject: true,
       hash: false,
@@ -39,12 +39,7 @@ module.exports = {
     rules: [
       {
         test: /\.((c|sa|sc)ss)$/i,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'postcss-loader',
-          'sass-loader',
-        ],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
         test: /\.js$/,
@@ -115,6 +110,14 @@ module.exports = {
         {
           from: path.resolve(environment.paths.source, 'images', 'content'),
           to: path.resolve(environment.paths.output, 'images', 'content'),
+          toType: 'dir',
+          globOptions: {
+            ignore: ['*.DS_Store', 'Thumbs.db'],
+          },
+        },
+        {
+          from: path.resolve(environment.paths.source, 'pdf'),
+          to: path.resolve(environment.paths.output, 'pdf'),
           toType: 'dir',
           globOptions: {
             ignore: ['*.DS_Store', 'Thumbs.db'],

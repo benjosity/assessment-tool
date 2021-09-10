@@ -8,21 +8,27 @@ const calculateResults = answers => {
   if (answers[0] == 'A' || answers[0] == 'B') {
     level = '0';
     document.getElementById('result-title').textContent = 'Level 0: Full-Stack Observability';
+    document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
   } else if (answers[0] == 'C') {
     level = '1';
     document.getElementById('result-title').textContent = 'Level 1: Business VIsualization';
+    document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
   } else if (answers[0] == 'D') {
     level = '2';
     document.getElementById('result-title').textContent = 'Level 2: Business Correlation';
+    document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
   } else if (answers[0] == 'E') {
     level = '3';
     document.getElementById('result-title').textContent = 'Level 3: Business Validation';
+    document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
   } else if (answers[0] == 'F') {
     level = '4';
     document.getElementById('result-title').textContent = 'Level 4: Business Prioritization';
+    document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
   } else if (answers[0] == 'G') {
     level = '5';
     document.getElementById('result-title').textContent = 'Level 5: Business Optimization';
+    document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
   }
 
   // Update HTML list on lower results section
