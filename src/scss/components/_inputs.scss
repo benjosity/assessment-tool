@@ -87,11 +87,12 @@
     }
   }
 }
-
-.form-wrap {
+.results-form {
   border: 1px solid #ebedf1;
   box-shadow: 0px 6px 6px 2px rgba(140, 144, 149, 0.2);
+}
 
+.form-wrap {
   .mktoForm input[type='text'],
   .mktoForm input[type='url'],
   .mktoForm input[type='email'],
@@ -133,6 +134,20 @@
 
   .mktoForm .mktoLabel {
     float: none !important;
+  }
+
+  .mktoButtonRow {
+    width: 100%;
+    display: block;
+    float: none !important;
+
+    .mktoButton[type='submit'] {
+      @apply w-full inline-block rounded-full px-8 py-6 bg-purple text-white cursor-pointer font-medium text-3xl cursor-pointer ease-in transition-all duration-500;
+
+      &:hover {
+        @apply bg-primary;
+      }
+    }
   }
 
   .mktoErrorMsg {

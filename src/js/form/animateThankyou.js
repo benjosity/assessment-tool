@@ -21,8 +21,12 @@ const AnimateThankyou = () => {
       },
       'start'
     )
-    .to(thankyou, {
-      opacity: 1,
-    });
+    .to(
+      thankyou,
+      {
+        opacity: 1,
+      },
+      '+0.3'
+    );
 };
 export default AnimateThankyou;

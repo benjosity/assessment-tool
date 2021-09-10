@@ -63,3 +63,9 @@
     @apply hidden;
   }
 }
+
+.results-form .thank-you {
+  a {
+    @apply text-primary;
+  }
+}
