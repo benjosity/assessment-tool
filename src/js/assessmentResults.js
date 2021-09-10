@@ -1,4 +1,4 @@
-import ViewResults from './viewResults';
+import ViewResults from './animations/viewResults';
 
 const calculateResults = answers => {
   let level = '';
@@ -46,6 +46,7 @@ const calculateResults = answers => {
 
   ViewResults();
 };
+
 const getResults = () => {
   const answerSet = new Array();
   let questions = document.querySelectorAll('.valid-question');

@@ -1,9 +1,9 @@
-import StartTest from './startTestAnimation';
+import StartTest from './animations/startTestAnimation';
 import navigateQuestions from './navigateQuestions';
 import getResults from './assessmentResults';
 import mktoForm from './form/marketoForm';
 
-import './inputs.js';
+import './inputValidation.js';
 import '../scss/app.scss';
 
 // Start Tool

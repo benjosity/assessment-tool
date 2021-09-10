@@ -6,6 +6,7 @@ const mktoForm = () => {
     var formEl = form.getFormElem()[0];
 
     // remove element styles from root and children (may want to disable this while debugging)
+    // This along with the DestyleMktoForm function get's rid a lot of unecessary styling but not all. Will need looking into/cleaning up
     for (
       var elsWithStyles = document.querySelectorAll(
           '#' + formEl.id + ', #' + formEl.id + ' [style]'
@@ -31,7 +32,7 @@ const mktoForm = () => {
         styleSheets[i].disabled = true;
       }
     }
-
+    // Additional style removal
     DestyleMktoForm(form);
 
     // On success
