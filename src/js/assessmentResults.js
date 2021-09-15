@@ -6,33 +6,33 @@ const calculateResults = answers => {
 
   // Get Level and update Results title
   if (answers[0] == 'A' || answers[0] == 'B') {
-    level = '0';
-    document.getElementById('result-title').textContent = 'Level 0: Full-Stack Observability';
+    level = '1';
+    document.getElementById('result-title').textContent = 'Level 1: Full-Stack Observability';
     document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
   } else if (answers[0] == 'C') {
-    level = '1';
-    document.getElementById('result-title').textContent = 'Level 1: Business VIsualization';
+    level = '2';
+    document.getElementById('result-title').textContent = 'Level 2: Business VIsualization';
     document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
   } else if (answers[0] == 'D') {
-    level = '2';
-    document.getElementById('result-title').textContent = 'Level 2: Business Correlation';
+    level = '3';
+    document.getElementById('result-title').textContent = 'Level 3: Business Correlation';
     document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
   } else if (answers[0] == 'E') {
-    level = '3';
-    document.getElementById('result-title').textContent = 'Level 3: Business Validation';
+    level = '4';
+    document.getElementById('result-title').textContent = 'Level 4: Business Validation';
     document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
   } else if (answers[0] == 'F') {
-    level = '4';
-    document.getElementById('result-title').textContent = 'Level 4: Business Prioritization';
+    level = '5';
+    document.getElementById('result-title').textContent = 'Level 5: Business Prioritization';
     document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
   } else if (answers[0] == 'G') {
-    level = '5';
-    document.getElementById('result-title').textContent = 'Level 5: Business Optimization';
+    level = '6';
+    document.getElementById('result-title').textContent = 'Level 6: Business Optimization';
     document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
   }
 
   // Update HTML list on lower results section
-  if (level === '5' || level === '4') {
+  if (level === '6' || level === '5') {
     document.getElementById('high-tier').style.display = 'block';
   } else {
     document.getElementById('low-tier').style.display = 'block';
