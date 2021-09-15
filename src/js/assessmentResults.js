@@ -8,27 +8,27 @@ const calculateResults = answers => {
   if (answers[0] == 'A' || answers[0] == 'B') {
     level = '1';
     document.getElementById('result-title').textContent = 'Level 1: Full-Stack Observability';
-    document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
+    document.getElementById('pdf-link').href = '../pdf/P24_AppD_Assessment-Tool_V3.pdf';
   } else if (answers[0] == 'C') {
     level = '2';
     document.getElementById('result-title').textContent = 'Level 2: Business VIsualization';
-    document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
+    document.getElementById('pdf-link').href = '../pdf/P24_AppD_Assessment-Tool_V3.pdf';
   } else if (answers[0] == 'D') {
     level = '3';
     document.getElementById('result-title').textContent = 'Level 3: Business Correlation';
-    document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
+    document.getElementById('pdf-link').href = '../pdf/P24_AppD_Assessment-Tool_V3.pdf';
   } else if (answers[0] == 'E') {
     level = '4';
     document.getElementById('result-title').textContent = 'Level 4: Business Validation';
-    document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
+    document.getElementById('pdf-link').href = '../pdf/P24_AppD_Assessment-Tool_V3.pdf';
   } else if (answers[0] == 'F') {
     level = '5';
     document.getElementById('result-title').textContent = 'Level 5: Business Prioritization';
-    document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
+    document.getElementById('pdf-link').href = '../pdf/P24_AppD_Assessment-Tool_V3.pdf';
   } else if (answers[0] == 'G') {
     level = '6';
     document.getElementById('result-title').textContent = 'Level 6: Business Optimization';
-    document.getElementById('pdf-link').href = '../pdf/AppD-Level1.pdf';
+    document.getElementById('pdf-link').href = '../pdf/P24_AppD_Assessment-Tool_V3.pdf';
   }
 
   // Update HTML list on lower results section
