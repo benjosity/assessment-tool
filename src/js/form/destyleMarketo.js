@@ -15,10 +15,7 @@ const DestyleMktoForm = (mktoForm, moreStyles) => {
       [mktoForms2BaseStyle, mktoForms2ThemeStyle].indexOf(ss.ownerNode) != -1 ||
       formEl.contains(ss.ownerNode)
     ) {
-      console.log('Marketo destyle: removing', ss);
       ss.disabled = true;
-    } else {
-      console.log('Marketo destyle: ignoring', ss);
     }
   });
 

@@ -3,6 +3,7 @@ import ViewResults from './animations/viewResults';
 const calculateResults = answers => {
   let level = '';
   let appetite = '';
+  let appetiteVal = '';
 
   // Get Level and update Results title
   if (answers[0] == 'A' || answers[0] == 'B') {
@@ -41,13 +42,16 @@ const calculateResults = answers => {
   // Get Level Tier
   if (answers[1] == 'A' || answers[1] == 'B' || answers[1] == 'C') {
     appetite = 'A';
+    appetiteVal = 'has appetite';
   } else {
     appetite = 'B';
+    appetiteVal = 'no appetite';
     document.getElementById('fact-block').style.display = 'none';
   }
 
   // Show main results copy
   const result = level + '' + appetite;
+  document.querySelector('input[name="campaignID"').value = 'Level: ' + level + ', ' + appetiteVal;
   document.querySelector("[data-result='" + result + "']").style.display = 'block';
 
   ViewResults();
