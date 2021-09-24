@@ -43,7 +43,7 @@ const calculateResults = answers => {
     appetite = 'A';
   } else {
     appetite = 'B';
-    document.getElementById('fact-block').style.display = 'hidden';
+    document.getElementById('fact-block').style.display = 'none';
   }
 
   // Show main results copy

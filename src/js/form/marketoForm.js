@@ -2,7 +2,7 @@ import DestyleMktoForm from './destyleMarketo';
 import AnimateThankyou from './animateThankyou';
 
 const mktoForm = () => {
-  MktoForms2.loadForm('//app-abd.marketo.com', '031-WIX-618', 3339, function (form) {
+  MktoForms2.loadForm('https://app-abd.marketo.com', '031-WIX-618', 3339, function (form) {
     var formEl = form.getFormElem()[0];
 
     // remove element styles from root and children (may want to disable this while debugging)
