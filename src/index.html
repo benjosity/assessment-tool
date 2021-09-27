@@ -12,7 +12,10 @@
   </head>
   <body>
 
-  
+    <div class="mobile-progress sm:hidden">
+      <div class="bar"></div>
+    </div>
+
     <div class="tool bg-dark overflow-hidden">
       <div class="container sm:pt-40 sm:pb-40 pt-20 relative">
 
@@ -37,7 +40,7 @@
             </div>
             <div class="sm:col-span-10 col-span-12">
               <h1 class="text-h3 mb-4">The AppDynamics Business Observability Platform</h1>
-              <h2 class="md:text-h1 sm:text-6xl text-4xl font-light">Welcome to the AppDynamics Business Observability Journey Mapper</h2>
+              <h2 class="md:text-h1 text-6xl font-light">Welcome to the AppDynamics Business Observability Journey Mapper</h2>
             </div>
             <div class="sm:col-span-8 col-span-12 sm:col-start-2 sm:text-3xl text-2xl sm:pb-0 pb-80">
               <p>Technologists today need to be able to contextualize IT performance insights with real-time business data to prioritize actions based on customer and business impact. This is what we call Business Observability.</p>
@@ -54,7 +57,7 @@
         <div class="questions relative z-10 opacity-0 h-0 pointer-events-none">
           <div class="grid grid-cols-12 gap-8">
 
-            <div class="questions-top col-span-12 text-white sm:mb-8 -translate-y-8 opacity-0">
+            <div class="questions-top col-span-12 text-white sm:mb-8 -translate-y-8 opacity-0 sm:block hidden">
               <h3 class="sm:mb-10 mb-4 w-full">Business Observability Journey Mapper</h3>
               <div class="steps flex justify-end items-end">
                 <div class="tabs sm:flex hidden justify-items-end items-end">
@@ -71,7 +74,7 @@
                 <div class="grid grid-cols-12 gap-8">
                   
                   <!-- SYMBOL -->
-                  <div class="md:col-span-1 col-span-12 py-20">
+                  <div class="md:col-span-1 col-span-12 sm:py-20 pt-8 px-8">
                     <svg id="question-circle" class="sm:ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none">
                       <path id="circle-inner" fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/>
                       <path id="cicle-outer" fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/>
@@ -80,7 +83,7 @@
                   </div>
 
                   <!-- QUESTIONS -->
-                  <div class="lg:col-span-9 md:col-span-10 col-span-12">
+                  <div class="md:col-span-11 col-span-12">
                     <!-- QUESTION 1 -->
                     <div class="question question-1 relative z-10 active" data-signpost="1">
                       <div class="inner-question">
@@ -120,7 +123,7 @@
                     </div>
 
                     <!-- QUESTION 2 -->
-                    <div class="question question-2 opacity-0 pointer-events-none absolute top-0 z-0" data-signpost="2">
+                    <div class="question question-2 opacity-0 pointer-events-none absolute top-32 sm:top-0 z-0" data-signpost="2">
                       <div class="inner-question">
                         <div class="font-light sm:text-h3 text-2xl mb-7 leading-tight">A year of rapid digital transformation has led to soaring levels of IT complexity in many organizations. In response, technologists have recognized the need to monitor the full IT estate, from traditional, legacy IT systems through to new, hybrid cloud environments.</div>
                         <div class="sm:text-6xl text-4xl leading-snug">How important is it for you to monitor the following areas of your IT stack to cope with heightened complexity?</div>
@@ -172,7 +175,7 @@
                     </div>
                     
                     <!-- QUESTION 3 -->
-                    <div class="question question-3 opacity-0 pointer-events-none absolute top-0 z-0" data-signpost="3">
+                    <div class="question question-3 opacity-0 pointer-events-none absolute top-32 sm:top-0 z-0" data-signpost="3">
                       <div class="inner-question">
                         <div class="sm:text-6xl text-4xl leading-snug">To what extent have high data volumes caused by additional monitoring contributed to increased IT complexity in your organization?</div>
                         <div class="inputs">
@@ -197,7 +200,7 @@
                     </div>
 
                     <!-- QUESTION 4 -->
-                    <div class="question question-4 opacity-0 pointer-events-none absolute top-0 z-0" data-signpost="4">
+                    <div class="question question-4 opacity-0 pointer-events-none absolute top-32 sm:top-0 z-0" data-signpost="4">
                       <div class="inner-question sm:overflow-y-scroll sm:max-h-500">
                         <div class="sm:text-6xl text-4xl leading-snug">When it comes to observing your entire IT stack and connecting IT performance to business outcomes, which of the following best describes your current capabilities?</div>
                         <div class="instruction uppercase font-light text-2xl mt-10">Choose only one</div>
@@ -270,7 +273,7 @@
                     </div>
 
                     <!-- QUESTION 5 -->
-                    <div class="question question-5 opacity-0 pointer-events-none absolute top-0 z-0" data-signpost="5">
+                    <div class="question question-5 opacity-0 pointer-events-none absolute top-32 sm:top-0 z-0" data-signpost="5">
                       <div class="inner-question">
                         <div class="font-light sm:text-h3 text-2xl mb-7 leading-tight">Now think about the year ahead.</div>
                         <div class="sm:text-6xl text-4xl leading-snug">How important will it be for your organization to directly correlate technology performance across the full IT stack with business outcomes to prioritize actions based on what will have the biggest impact?</div>
@@ -300,7 +303,7 @@
                     </div>
 
                     <!-- QUESTION 6 -->
-                    <div class="question question-6 opacity-0 pointer-events-none absolute top-0 z-0" data-signpost="6">
+                    <div class="question question-6 opacity-0 pointer-events-none absolute top-32 sm:top-0 z-0" data-signpost="6">
                       <div class="inner-question">
                         <div class="sm:text-6xl text-4xl leading-snug">In what timeframe do you anticipate your organization implementing full-stack observability linked to business outcomes?</div>
                         <div class="instruction uppercase font-light text-2xl mt-10">Select only one</div>
@@ -346,7 +349,7 @@
                     </div>
 
                     <!-- QUESTION 7 -->
-                    <div class="question question-7 opacity-0 pointer-events-none absolute top-0 z-0" data-signpost="7">
+                    <div class="question question-7 opacity-0 pointer-events-none absolute top-32 sm:top-0 z-0" data-signpost="7">
                       <div class="inner-question">
                         <div class="sm:text-6xl text-4xl leading-snug">Finally, to what extent do you agree or disagree that the inability to connect full-stack observability with business performance will:</div>
                         <div class="inputs">
@@ -426,7 +429,7 @@
             </div>
             <div class="sm:col-span-10 md:col-span-7 col-span-12">
               <h1 class="text-h3 mb-4">Thanks for taking the time to complete the assessment.</h1>
-              <h2 class="md:text-h1 sm:text-6xl text-4xl font-light">Based on your responses, your organization is at '<span id="result-title">Level 1: Full-Stack Observability</span>'.</h2>
+              <h2 class="md:text-h1 text-6xl font-light">Based on your responses, your organization is at '<span id="result-title">Level 1: Full-Stack Observability</span>'.</h2>
             </div>
             <div class="sm:col-span-10 md:col-span-7 col-span-12 sm:col-start-2 sm:text-3xl text-2xl sm:pb-0 pb-80">
               <div class="result-text" data-result="1A">

@@ -1,11 +1,11 @@
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  // purge: ['./src/**/*.html', './src/**/*.js'],
-  purge: {
-    enabled: true,
-    content: ['./src/**/*.html', './src/**/*.js'],
-  },
+  purge: ['./src/**/*.html', './src/**/*.js'],
+  // purge: {
+  //   enabled: true,
+  //   content: ['./src/**/*.html', './src/**/*.js'],
+  // },
   darkMode: false, // or 'media' or 'class'
   theme: {
     container: {
@@ -40,6 +40,10 @@ module.exports = {
       },
       borderRadius: {
         6: '0.6rem',
+      },
+      maxWidth: {
+        986: '98.6rem',
+        50: '50vh',
       },
       maxHeight: {
         500: '50rem',

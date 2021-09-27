@@ -1,6 +1,7 @@
 import { gsap } from 'gsap';
 import prevQuestionSlide from './animations/prevQuestion';
 import nextQuestionSlide from './animations/nextQuestion';
+import updateProgressBar from './updateProgressBar';
 
 const navigateQuestions = buttonID => {
   let containerHeight = document.querySelector('.question-track').offsetHeight;
@@ -11,8 +12,10 @@ const navigateQuestions = buttonID => {
 
   if (buttonID == 'nextButton') {
     nextQuestionSlide(tl, containerHeight, container, activeQuestion);
+    updateProgressBar('next');
   } else {
     prevQuestionSlide(tl, containerHeight, container, activeQuestion);
+    updateProgressBar('previous');
   }
 };
 

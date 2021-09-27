@@ -2,6 +2,7 @@ import navValidation from '../navValidation';
 import updateSteps from '../updateSteps';
 
 const prevQuestionSlide = (tl, containerHeight, container, activeQuestion) => {
+  let questionCircle = document.getElementById('cicle-outer');
   let prevQuestion = document.querySelector('.question.active').previousElementSibling;
   let prevQuestionHeight =
     document.querySelector('.question.active').previousElementSibling.children[0].offsetHeight;
@@ -17,9 +18,16 @@ const prevQuestionSlide = (tl, containerHeight, container, activeQuestion) => {
     .to(
       activeQuestion,
       {
-        yPercent: 100,
         opacity: 0,
         pointerEvents: 'none',
+      },
+      'start'
+    )
+    .to(
+      questionCircle,
+      {
+        rotate: '-=360',
+        transformOrigin: '100% 50%',
       },
       'start'
     )
@@ -48,7 +56,6 @@ const prevQuestionSlide = (tl, containerHeight, container, activeQuestion) => {
     .to(
       prevQuestion,
       {
-        xPercent: 0,
         opacity: 1,
         pointerEvents: 'auto',
         onComplete: navValidation(activeQuestion, prevQuestion),

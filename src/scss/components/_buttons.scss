@@ -1,5 +1,10 @@
 .button {
-  @apply inline-block rounded-full px-8 py-6 bg-white text-dark font-medium text-3xl cursor-pointer ease-in transition-all duration-500;
+  @apply inline-block rounded-full px-8 py-6 bg-white text-dark font-medium cursor-pointer ease-in transition-all duration-500;
+  font-size: 1.6rem;
+
+  @media (min-width: 640px) {
+    @apply text-3xl;
+  }
 
   &:hover {
     @apply bg-primary text-white;
