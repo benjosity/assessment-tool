@@ -13,6 +13,20 @@
     }
   }
 
+  &.next {
+    &:hover {
+      @apply bg-white text-primary;
+    }
+  }
+
+  &.back {
+    @apply opacity-50;
+
+    &:hover {
+      @apply bg-white text-primary;
+    }
+  }
+
   &.button-outline {
     @apply bg-transparent text-white border-white border-solid border;
   }
