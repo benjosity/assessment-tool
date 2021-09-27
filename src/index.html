@@ -12,579 +12,546 @@
   </head>
   <body>
 
-    <div id="appd-assessment"></div>
-      <div class="tool bg-dark overflow-hidden">
-        <div class="container sm:pt-40 sm:pb-40 pt-20 relative">
+  
+    <div class="tool bg-dark overflow-hidden">
+      <div class="container sm:pt-40 sm:pb-40 pt-20 relative">
 
-          <div class="background-elements h-full w-full absolute top-0 bottom-0 z-0">
-            <div class="intro-img absolute right-0 bottom-0 z-0 sm:block hidden">
-              <img src="images/content/home-shape1.png" alt="">
-            </div>
-            <div class="main-shape absolute sm:right-1/4 bottom-1/2 z-10 origin-center">
-              <svg class="origin-top-left" width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="inner" d="M130 260C130 188.24 188.24 130 260 130C331.76 130 390 188.24 390 260C390 331.76 331.76 390 260 390C188.24 389.48 130 331.76 130 260Z" fill="transparent"/>
-                <path class="outer" d="M260 0C117.52 0 0 117.52 0 260C0 402.48 117.52 520 260 520V390C188.24 390 130 331.76 130 260C130 188.24 188.24 130 260 130C331.76 130 390 188.24 390 260H520C520 117.52 403.52 0 260 0Z" fill="#4E3EB1"/>
-                </svg>
-            </div>
+        <div class="background-elements h-full w-full absolute top-0 bottom-0 z-0">
+          <div class="intro-img absolute right-0 bottom-0 z-0 sm:block hidden">
+            <img src="images/content/home-shape1.png" alt="">
           </div>
-
-          <div class="intro text-white relative z-10">
-            <div class="grid grid-cols-12 gap-8">
-              <div class="col-span-1 sm:block hidden text-right">
-                <svg class="sm:ml-auto" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M66 33V0C48.576 0 31.68 6.86405 19.272 19.272C6.86397 31.68 0 48.312 0 66H33C33 47.784 47.784 33 66 33Z" fill="#4E3EB1"/>
-                </svg>
-              </div>
-              <div class="sm:col-span-10 col-span-12">
-                <h1 class="text-h3 mb-4">The AppDynamics Business Observability Platform</h1>
-                <h2 class="md:text-h1 text-6xl font-light">Welcome to the AppDynamics Business Observability Journey Mapper</h2>
-              </div>
-              <div class="sm:col-span-8 col-span-12 sm:col-start-2 sm:text-3xl text-2xl sm:pb-0 pb-80">
-                <p>Technologists today need to be able to contextualize IT performance insights with real-time business data to prioritize actions based on customer and business impact. This is what we call Business Observability.</p>
-                <p>But few technologists currently have the strategy or tools to truly connect IT performance with business outcomes and 73% are concerned that this will be detrimental to their organization in the next year.</p>
-                <p>Technologists have no option but to urgently begin the journey to link full-stack observability with business context within their organizations. The Business Observability Journey Mapper identifies six key stages in this journey.</p>
-                <p>By answering seven short questions, we’ll assess your organization’s current capabilities and we’ll give you advice on how you can speed up your journey so that you can cut through complexity and observe what matters most.</p>
-                <div class="start-test button mt-8">
-                  Take The Test
-                </div>
-              </div>
-            </div>
+          <div class="main-shape absolute sm:right-1/4 bottom-1/2 z-10 origin-center">
+            <svg class="origin-top-left" width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="inner" d="M130 260C130 188.24 188.24 130 260 130C331.76 130 390 188.24 390 260C390 331.76 331.76 390 260 390C188.24 389.48 130 331.76 130 260Z" fill="transparent"/>
+              <path class="outer" d="M260 0C117.52 0 0 117.52 0 260C0 402.48 117.52 520 260 520V390C188.24 390 130 331.76 130 260C130 188.24 188.24 130 260 130C331.76 130 390 188.24 390 260H520C520 117.52 403.52 0 260 0Z" fill="#4E3EB1"/>
+              </svg>
           </div>
-
-          <div class="questions relative z-10 opacity-0 h-0 pointer-events-none">
-            <div class="grid grid-cols-12 gap-8">
-
-              <div class="questions-top col-span-12 text-white sm:mb-8 -translate-y-8 opacity-0">
-                <h3 class="sm:mb-10 mb-4 w-full">Business Observability Journey Mapper</h3>
-                <div class="steps flex justify-end items-end">
-                  <div class="tabs sm:flex hidden justify-items-end items-end">
-                    <span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                  </div>
-                  <div class="label leading-none">
-                    <span id="step-number">1</span> of 7 steps
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-span-12 pb-8">
-                <div id="question-container" class="question-track relative">
-                  <!-- QUESTION 1 -->
-                  <div class="question question-1 relative z-10 active" data-signpost="1">
-                    <div class="inner-question">
-                      <div class="grid grid-cols-12 gap-8">
-                        <div class="md:col-span-1 col-span-12">
-                          <svg class="sm:ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none"><path fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/><path fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/><path stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/></svg>
-                        </div>
-                        <div class="lg:col-span-9 md:col-span-10 col-span-12">
-                          <div class="font-light sm:text-h3 text-2xl mb-7 leading-tight">Our research shows that, over the last 12 months, technologists were on average asked to deliver digital transformation projects three times faster than prior to the pandemic.</div>
-                          <div class="sm:text-6xl text-4xl leading-snug">How has this acceleration of digital transformation impacted you?</div>
-                          <div class="inputs">
-                            <div class="input-container input pill-type sm:mt-20 mt-10">
-                              I have felt under immense pressure
-                              <div class="pills sm:flex justify-start items-start mt-8" data-question="1a">
-                                <div class="input-element">
-                                  <div class="sm:mb-0 mb-8 input-value button pill" data-value="1">Yes - definitely</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="sm:mb-0 mb-8 input-value button pill" data-value="2">To some extent</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="sm:mb-0 mb-8 input-value button pill" data-value="3">Not particularly</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="input-container input pill-type sm:mt-20 mt-10">
-                              My job feels more complex
-                              <div class="pills sm:flex justify-start items-start mt-8" data-question="1b">
-                                <div class="input-element">
-                                  <div class="sm:mb-0 mb-8 input-value button pill" data-value="1">Yes - definitely</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="sm:mb-0 mb-8 input-value button pill" data-value="2">To some extent</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="sm:mb-0 mb-8 input-value button pill" data-value="3">Not particularly</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- QUESTION 2 -->
-                  <div class="question question-2 opacity-0 pointer-events-none absolute top-0 z-0 transform translate-y-full" data-signpost="2">
-                    <div class="inner-question">
-                      <div class="grid grid-cols-12 gap-8">
-                        <div class="md:col-span-1 col-span-12">
-                          <svg class="sm:ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none"><path fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/><path fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/><path stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/></svg>
-                        </div>
-                        <div class="lg:col-span-9 md:col-span-10 col-span-12">
-                          <div class="font-light sm:text-h3 text-2xl mb-7 leading-tight">A year of rapid digital transformation has led to soaring levels of IT complexity in many organizations. In response, technologists have recognized the need to monitor the full IT estate, from traditional, legacy IT systems through to new, hybrid cloud environments.</div>
-                          <div class="sm:text-6xl text-4xl leading-snug">How important is it for you to monitor the following areas of your IT stack to cope with heightened complexity?</div>
-                          <div class="inputs">
-                            <div class="input-container input pill-type sm:mt-20 mt-10">
-                              Compute and storage infrastructure (traditional or cloud) health and impact on applications and services
-                              <div class="pills sm:flex justify-start items-start mt-8">
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Very important</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Important</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Not particularly important</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="input-container input pill-type sm:mt-20 mt-10">
-                              Network and infrastructure (traditional, cloud or WAN) health and impact on applications and services
-                              <div class="pills sm:flex justify-start items-start mt-8">
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Very important</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Important</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Not particularly important</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="input-container input pill-type sm:mt-20 mt-10">
-                              Applications and services health and impact on user experience and business outcomes
-                              <div class="pills sm:flex justify-start items-start mt-8">
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Very important</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Important</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Not particularly important</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- QUESTION 3 -->
-                  <div class="question question-3 opacity-0 pointer-events-none absolute top-0 z-0 transform translate-y-full" data-signpost="3">
-                    <div class="inner-question">
-                      <div class="grid grid-cols-12 gap-8">
-                        <div class="md:col-span-1 col-span-12">
-                          <svg class="sm:ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none"><path fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/><path fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/><path stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/></svg>
-                        </div>
-                        <div class="lg:col-span-9 md:col-span-10 col-span-12">
-                          <div class="sm:text-6xl text-4xl leading-snug">To what extent have high data volumes caused by additional monitoring contributed to increased IT complexity in your organization?</div>
-                          <div class="inputs">
-                            <div class="input-container input pill-type sm:mt-20 mt-10">
-                              <div class="pills sm:flex justify-start items-start mt-8">
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">To a great extent</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">To some extent</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Not particularly</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Not at all</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- QUESTION 4 -->
-                  <div class="question question-4 opacity-0 pointer-events-none absolute top-0 z-0 transform translate-y-full" data-signpost="4">
-                    <div class="inner-question sm:overflow-y-scroll sm:max-h-500">
-                      <div class="grid grid-cols-12 gap-8">
-                        <div class="md:col-span-1 col-span-12">
-                          <svg class="sm:ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none"><path fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/><path fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/><path stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/></svg>
-                          <div class="down-indicator absolute bottom-20 left-14 sm:block hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" fill="none"><path stroke="#19212B" stroke-width="1.2" d="M1 13l11.998 10.667L25 13M1 1l11.998 10.667L25 1"/></svg>
-                          </div>
-                        </div>
-                        <div class="lg:col-span-9 md:col-span-10 col-span-12">
-                          <div class="sm:text-6xl text-4xl leading-snug">When it comes to observing your entire IT stack and connecting IT performance to business outcomes, which of the following best describes your current capabilities?</div>
-                          <div class="instruction uppercase font-light text-2xl mt-10">Choose only one</div>
-                          <div class="input-container inputs valid-question" data-question="4">
-                            <div class="input radio-type mt-10">
-                              <div class="radios">
-                                <div class="radio input-element flex justify-start items-start py-10">
-                                  <div class="label font-medium">A</div>
-                                  <div class="radio-question">We use a range of different tools to monitor the IT stack but the lack of a unified view often makes it hard for our teams to work together.</div>
-                                  <div class="input-value input rounded-full" data-value="A"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="input radio-type">
-                              <div class="radios">
-                                <div class="radio input-element flex justify-start items-start py-10">
-                                  <div class="label font-medium">B</div>
-                                  <div class="radio-question">We have tried to implement a more unified observability / monitoring strategy across the IT stack to minimize MTTR, but we have little visibility into the business impact of performance issues and outages.</div>
-                                  <div class="input-value input rounded-full" data-value="B"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="input radio-type">
-                              <div class="radios">
-                                <div class="radio input-element flex justify-start items-start py-10">
-                                  <div class="label font-medium">C</div>
-                                  <div class="radio-question">We have a unified observability / monitoring strategy in place and access to high-level business KPIs, but we can’t visualize IT performance metrics and link these to user and business KPIs in real-time. </div>
-                                  <div class="input-value input rounded-full" data-value="C"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="input radio-type">
-                              <div class="radios">
-                                <div class="radio input-element flex justify-start items-start py-10">
-                                  <div class="label font-medium">D</div>
-                                  <div class="radio-question">We have a detailed view on how IT health and performance impacts business KPIs in near real-time, but we struggle to understand the ROI of IT performance fixes on user experience and business KPIs.</div>
-                                  <div class="input-value input rounded-full" data-value="D"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="input radio-type">
-                              <div class="radios">
-                                <div class="radio input-element flex justify-start items-start py-10">
-                                  <div class="label font-medium">E</div>
-                                  <div class="radio-question">We can see how an IT performance fix positively impacts user experience and business outcomes, and view real-time metrics via dashboards, but we still find it a challenge to evaluate and sort issues in real-time, based on potential impact to the business.</div>
-                                  <div class="input-value input rounded-full" data-value="E"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="input radio-type">
-                              <div class="radios">
-                                <div class="radio input-element flex justify-start items-start py-10">
-                                  <div class="label font-medium">F</div>
-                                  <div class="radio-question">We can filter technology issues and tickets based on user experience and business impact, but we’re still reliant on manual intervention to address IT issues and relate them to business metrics.</div>
-                                  <div class="input-value input rounded-full" data-value="F"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="input radio-type">
-                              <div class="radios">
-                                <div class="radio input-element flex justify-start items-start py-10">
-                                  <div class="label font-medium">G</div>
-                                  <div class="radio-question">We have advanced automation that quickly detects the impact of technology anomalies on end user experience and business performance. We can automatically right-size supporting infrastructure and migrate workloads to optimize applications performance and maximize business outcomes.</div>
-                                  <div class="input-value input rounded-full" data-value="G"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- QUESTION 5 -->
-                  <div class="question question-5 opacity-0 pointer-events-none absolute top-0 z-0 transform translate-y-full" data-signpost="5">
-                    <div class="inner-question">
-                      <div class="grid grid-cols-12 gap-8">
-                        <div class="md:col-span-1 col-span-12">
-                          <svg class="sm:ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none"><path fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/><path fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/><path stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/></svg>
-                        </div>
-                        <div class="md:col-span-10 col-span-12">
-                          <div class="font-light sm:text-h3 text-2xl mb-7 leading-tight">Now think about the year ahead.</div>
-                          <div class="sm:text-6xl text-4xl leading-snug">How important will it be for your organization to directly correlate technology performance across the full IT stack with business outcomes to prioritize actions based on what will have the biggest impact?</div>
-                          <div class="instruction uppercase font-light text-2xl mt-10">Select only one</div>
-                          <div class="inputs">
-                            <div class="input-container input pill-type sm:mt-20 mt-10">
-                              <div class="pills valid-question flex flex-wrap justify-start items-start mt-8" data-question="5">
-                                <div class="input-element mb-6 sm:w-auto w-full">
-                                  <div class="input-value button pill text-xl" data-value="A">Critical</div>
-                                </div>
-                                <div class="input-element mb-6 sm:w-auto w-full">
-                                  <div class="input-value button pill text-xl" data-value="B">Important</div>
-                                </div>
-                                <div class="input-element mb-6 sm:w-auto w-full">
-                                  <div class="input-value button pill text-xl" data-value="C">Quite important</div>
-                                </div>
-                                <div class="input-element mb-6 sm:w-auto w-full">
-                                  <div class="input-value button pill text-xl" data-value="D">Not particularly important</div>
-                                </div>
-                                <div class="input-element mb-6 sm:w-auto w-full">
-                                  <div class="input-value button pill text-xl" data-value="E">Not at all important</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- QUESTION 6 -->
-                  <div class="question question-6 opacity-0 pointer-events-none absolute top-0 z-0 transform translate-y-full" data-signpost="6">
-                    <div class="inner-question">
-                      <div class="grid grid-cols-12 gap-8">
-                        <div class="md:col-span-1 col-span-12">
-                          <svg class="sm:ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none"><path fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/><path fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/><path stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/></svg>
-                        </div>
-                        <div class="lg:col-span-9 md:col-span-10 col-span-12">
-                          <div class="sm:text-6xl text-4xl leading-snug">In what timeframe do you anticipate your organization implementing full-stack observability linked to business outcomes?</div>
-                          <div class="instruction uppercase font-light text-2xl mt-10">Select only one</div>
-                          <div class="inputs">
-                            <div class="input-container input radio-type-alt sm:mt-20 mt-8">
-                              <div class="sm:grid grid-cols-12 grid-rows-3 grid-flow-col gap-4 mt-8 flex flex-wrap">
-
-                                  <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-1">
-                                    <div class="input input-value"></div>
-                                    <div class="label">As soon as possible</div>
-                                  </div>
-
-                                  <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-3">
-                                    <div class="input input-value"></div>
-                                    <div class="label">Within 12 months</div>
-                                  </div>
-
-                                  <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-5">
-                                    <div class="input input-value"></div>
-                                    <div class="label">Longer term than this</div>
-                                  </div>
-
-                                  <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-2">
-                                    <div class="input input-value"></div>
-                                    <div class="label">Within 6 months</div>
-                                  </div>
-
-
-                                  <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-4">
-                                    <div class="input input-value"></div>
-                                    <div class="label">Within 24 months</div>
-                                  </div>
-
-                                  <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-6">
-                                    <div class="input input-value"></div>
-                                    <div class="label">No current plans</div>
-                                  </div>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- QUESTION 7 -->
-                  <div class="question question-7 opacity-0 pointer-events-none absolute top-0 z-0 transform translate-y-full" data-signpost="7">
-                    <div class="inner-question">
-                      <div class="grid grid-cols-12 gap-8">
-                        <div class="md:col-span-1 col-span-12">
-                          <svg class="sm:ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none"><path fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/><path fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/><path stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/></svg>
-                        </div>
-                        <div class="md:col-span-11 col-span-12">
-                          <div class="sm:text-6xl text-4xl leading-snug">Finally, to what extent do you agree or disagree that the inability to connect full-stack observability with business performance will:</div>
-                          <div class="inputs">
-                            <div class="input-container input pill-type sm:mt-20 mt-10">
-                              Be detrimental to your business in 2021?
-                              <div class="pills sm:flex justify-start items-start mt-8">
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Strongly agree</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Tend to agree</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Tend to disagree</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Strongly disagree</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Don’t know</div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="input-container input pill-type sm:mt-20 mt-10">
-                              Hinder you from achieving your personal career goals?
-                              <div class="pills sm:flex justify-start items-start mt-8">
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Strongly agree</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Tend to agree</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Tend to disagree</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Strongly disagree</div>
-                                </div>
-                                <div class="input-element">
-                                  <div class="input-value button pill sm:mb-0 mb-8">Don’t know</div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="questions-bottom col-span-12 text-white mb-8 translate-y-8 opacity-0">
-                <div class="flex justify-between items-center relative">
-                  <div id="prevButton" class="disabled button back">
-                    Back
-                  </div>
-                  <div id="nextButton" class="disabled button next">
-                    Next >
-                  </div>
-                  <div id="resultsButton" class="disabled button results pointer-events-none absolute right-0 transform translate-x-full opacity-0">
-                    View Result
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="results-top text-white relative z-10 opacity-0 h-0 pointer-events-none">
-            <div class="grid grid-cols-12 gap-8">
-              <div class="col-span-1 sm:block hidden text-right">
-                <svg class="sm:ml-auto" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M66 33V0C48.576 0 31.68 6.86405 19.272 19.272C6.86397 31.68 0 48.312 0 66H33C33 47.784 47.784 33 66 33Z" fill="#4E3EB1"/>
-                </svg>
-              </div>
-              <div class="sm:col-span-10 md:col-span-7 col-span-12">
-                <h1 class="text-h3 mb-4">Thanks for taking the time to complete the assessment.</h1>
-                <h2 class="text-h1 font-light">Based on your responses, your organization is at '<span id="result-title">Level 1: Full-Stack Observability</span>'.</h2>
-              </div>
-              <div class="sm:col-span-10 md:col-span-7 col-span-12 sm:col-start-2 sm:text-3xl text-2xl sm:pb-0 pb-80">
-                <div class="result-text" data-result="1A">
-                  <p>You can see performance data across your IT estate, from customer-facing applications down to core infrastructure. And you clearly understand the importance of linking IT performance to business outcomes to deliver faultless digital experience and drive accelerated innovation. </p>
-                  <p>Well done! You’ve got the essential foundations in place to start your journey towards full-stack observability with business context.</p>
-                  <p>To speed up this journey, you should look to implement a unified monitoring strategy across your IT estate so that you can quickly identify the root causes of issues, anywhere across the IT stack.</p>
-                  <p>By progressing to the next stage – ‘Level 2: Business Visualization’ – you’ll start to develop an understanding of which business applications drive the most value for your business so you can decide where to prioritize your actions.</p>
-                </div>
-                <div class="result-text" data-result="1B">
-                  <p>You can see performance data across your IT estate, from customer-facing applications down to core network and security infrastructure.</p>
-                  <p>To accelerate your journey to link full-stack observability with business outcomes, you need more granular detail into IT systems’ health and performance, as well as user and business KPIs. This will enable you to prioritize actions based on what matters most to the business.</p>
-                  <p>By progressing to the next stage – ‘Level 2: Business Visualization’ – you’ll be able to visualize IT performance metrics and link these to user and business KPIs in real-time.</p>
-                </div>
-                <div class="result-text" data-result="2A">
-                  <p>You already have full-stack observability in place, with unified visibility of the entire IT estate. And you clearly understand the importance of linking IT performance to business outcomes to deliver faultless digital experience and drive accelerated innovation.</p>
-                  <p>Well done! You’re making great progress on your journey towards full-stack observability with business context.</p>
-                  <p>To accelerate this journey, you need more granular detail into IT systems’ health and performance, as well as user and business KPIs. This will enable you to prioritize actions based on what matters most to the business.</p>
-                  <p>By progressing to the next stage – ‘Level 3: Business Correlation’ – you’ll be able to visualize IT performance metrics and link these to user and business KPIs in real-time.</p>
-                </div>
-                <div class="result-text" data-result="2B">
-                  <p>You already have full-stack observability in place, with unified visibility of the entire IT estate.</p>
-                  <p>To speed up your journey to link full-stack observability with business outcomes, you need more granular detail into IT systems’ health and performance, as well as user and business KPIs. This will enable you to prioritize actions based on what matters most to the business.</p>
-                  <p>By progressing to the next stage – ‘Level 3: Business Correlation’ – you’ll be able to visualize IT performance metrics and link these to user and business KPIs in real-time.</p>
-                </div>
-                <div class="result-text" data-result="3A">
-                  <p>You can see the impact that technology performance issues have on end users and the business. And you clearly understand the importance of linking IT performance to business outcomes to deliver faultless digital experience and drive accelerated innovation.</p>
-                  <p>Well done! You’re making great progress on your journey towards full-stack observability with business context.</p>
-                  <p>To accelerate this journey, you need to be able to see the ROI of IT performance fixes on business KPIs so that you can demonstrate the value that IT is delivering to your organization.</p>
-                  <p>By progressing to the next stage – ‘Level 4: Business Validation’ – you’ll be able to validate the impact of every IT action by analyzing business KPIs.</p>
-                </div>
-                <div class="result-text" data-result="3B">
-                  <p>You can see the impact that technology performance issues have on end users and the business.</p>
-                  <p>To speed up your journey to link full-stack observability with business outcomes, you need to be able to see the ROI of IT performance fixes on business KPIs so that you can demonstrate the value that IT is delivering to your organization.</p>
-                  <p>By progressing to the next stage – ‘Level 4: Business Validation’ – you’ll be able to validate the impact of every IT action by analyzing business KPIs.</p>
-                </div>
-                <div class="result-text" data-result="4A">
-                  <p>You can validate the impact of every IT decision and action by analyzing business KPIs. And you clearly understand the importance of linking IT performance to business outcomes to deliver faultless digital experience and drive accelerated innovation.</p>
-                  <p>Well done! You’re well on your way to linking full-stack observability with business context!</p>
-                  <p>To accelerate this journey, you need to find a way to filter out all of the data noise and pinpoint those business critical issues that have the biggest impact on user experience or business transactions.</p>
-                  <p>By progressing to the next stage – ‘Level 5: Business Prioritization’ – you’ll be able to evaluate the criticality of IT issues in real-time based on user and business impact.</p>
-                </div>
-                <div class="result-text" data-result="4B">
-                  <p>You can validate the impact of every IT decision and action by analyzing business KPIs.</p>
-                  <p>To speed up your journey to link full-stack observability with business outcomes, you need to find a way to filter out all of the data noise and pinpoint those business critical issues that have the biggest impact on user experience or business transactions.</p>
-                  <p>By progressing to the next stage – ‘Level 5: Business Prioritization’ – you’ll be able to evaluate the criticality of IT issues in real-time based on user and business impact.</p>
-                </div>
-                <div class="result-text" data-result="5A">
-                  <p>You can view real-time IT and business metrics and prioritize actions based on potential impact to the business. And you clearly understand the importance of linking IT performance to business outcomes to deliver faultless digital experience and drive accelerated innovation.</p>
-                  <p>Well done! You’re now so close to linking full-stack observability with business context!</p>
-                  <p>To take the final step, you should look to implement advanced automation and AI to minimize the time it takes to detect and remediate negative business trends.</p>
-                  <p>By progressing to the next stage – ‘Level 6: Business Optimization’ – you’ll be able to automate and optimize IT performance across the entire IT stack to maximize user and business outcomes.</p>
-                </div>
-                <div class="result-text" data-result="5B">
-                  <p>You can view real-time IT and business metrics and prioritize actions based on potential impact to the business.</p>
-                  <p>To take the final step on your journey to link full-stack observability with business outcomes, you should look to implement advanced automation and AI to minimize the time it takes to detect and remediate negative business trends.</p>
-                  <p>By progressing to the next stage – ‘Level 6: Business Optimization’ – you’ll be able to automate and optimize IT performance across the entire IT stack to maximize user and business outcomes.</p>
-                </div>
-                <div class="result-text" data-result="6A">
-                  <p>Congratulations!! You’ve recognized the value of linking full-stack observability with business outcomes, and now you’re ready to reap the benefits!</p>
-                  <p>You have the cutting-edge tools and deep, real-time insights you need to deliver world-class technology performance at all times and to drive game-changing business impact.</p>
-                  <p>You’ve reached the pinnacle of linking full-stack observability with business outcomes but, as an Agent of Transformation, you’ll want to keep improving.</p>
-                  <p>You might want to consider whether your full-stack observability strategy is ready for the next wave of digital transformation and explore how you can optimize technology performance to support your organization’s strategic goals.</p>
-                </div>
-                <div class="result-text" data-result="6B">
-                  <p>Congratulations!! You have the cutting-edge tools and deep, real-time insights you need to deliver world-class technology performance at all times and to drive game-changing business impact.</p>
-                  <p>You’ve reached the pinnacle of linking full-stack observability with business outcomes but you’ll want to keep improving.</p>
-                  <p>You might want to consider whether your full-stack observability strategy is ready for the next wave of digital transformation and explore how you can optimize technology performance to support your organization’s strategic goals.</p>
-                </div>
-                <a href="#download-results">
-                  <div class="download-anchor button button-outline mt-20">
-                    Download full results
-                  </div>
-                  <div class="down-indicator mt-20">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" fill="none"><path stroke="#FFFFFF" stroke-width="1.2" d="M1 13l11.998 10.667L25 13M1 1l11.998 10.667L25 1"/></svg>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
 
-      <div id="download-results" class="results-form opacity-0 h-0 pointer-events-none overflow-hidden">
-        <div class="container grid grid-cols-12 gap-8 opacity-0 py-20">
-          <div class="lg:col-span-5 lg:col-start-2 sm:col-span-6 col-span-12">
-            <h2>Get your full results</h2>
-            <p>Fill in the form to access your full results and discover:</p>
-            <ul id="low-tier" class="hidden">
-              <li>How you can accelerate your organization’s journey to Business Observability</li>
-              <li>The game-changing benefits of connecting full-stack observability with business outcomes</li>
-              <li>How other technologists are managing heightened IT complexity and the pressure to deliver rapid digital transformation within their organizations</li>
-              <li>Useful resources to assist you on your journey to Business Observability </li>
-            </ul>
-            <ul id="high-tier" class="hidden">
-              <li>How you can fully exploit the benefits of full-stack observability with business context in your organization</li>
-              <li>How other technologists are managing heightened IT complexity and the pressure to deliver rapid digital transformation within their organizations</li>
-              <li>Useful resources to ensure you are continually progressing and optimizing your full-stack observability capabilities</li>
-            </ul>
-            <p>We'll email you a PDF version of your results.</p>
-            <div id="fact-block" class="fact-block mt-12 p-8 bg-primary text-white relative">
-              <h3>Did you know?</h3>
-              <span class="text-9xl tracking-tightest">96<sup class="text-7xl">%</sup></span><br>
-              <p>of technologists state that having the ability to monitor their entire IT stack and directly link technical performance to business outcomes is vital to their ability to deliver first-class digital experiences and accelerate digital transformation in 2021 and beyond.</p>
-              <div class="shape absolute right-0 top-0">
-                <svg width="114" height="118" viewBox="0 0 114 118" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M134 -17L74.3238 118H0L59.6762 -17H134Z" fill="#4E3EB1"/>
-                </svg>
+        <div class="intro text-white relative z-10">
+          <div class="grid grid-cols-12 gap-8">
+            <div class="col-span-1 sm:block hidden text-right">
+              <svg class="sm:ml-auto" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M66 33V0C48.576 0 31.68 6.86405 19.272 19.272C6.86397 31.68 0 48.312 0 66H33C33 47.784 47.784 33 66 33Z" fill="#4E3EB1"/>
+              </svg>
+            </div>
+            <div class="sm:col-span-10 col-span-12">
+              <h1 class="text-h3 mb-4">The AppDynamics Business Observability Platform</h1>
+              <h2 class="md:text-h1 sm:text-6xl text-4xl font-light">Welcome to the AppDynamics Business Observability Journey Mapper</h2>
+            </div>
+            <div class="sm:col-span-8 col-span-12 sm:col-start-2 sm:text-3xl text-2xl sm:pb-0 pb-80">
+              <p>Technologists today need to be able to contextualize IT performance insights with real-time business data to prioritize actions based on customer and business impact. This is what we call Business Observability.</p>
+              <p>But few technologists currently have the strategy or tools to truly connect IT performance with business outcomes and 73% are concerned that this will be detrimental to their organization in the next year.</p>
+              <p>Technologists have no option but to urgently begin the journey to link full-stack observability with business context within their organizations. The Business Observability Journey Mapper identifies six key stages in this journey.</p>
+              <p>By answering seven short questions, we’ll assess your organization’s current capabilities and we’ll give you advice on how you can speed up your journey so that you can cut through complexity and observe what matters most.</p>
+              <div class="start-test button mt-8">
+                Take The Test
               </div>
             </div>
           </div>
-          <div class="lg:col-span-5 sm:col-span-6 col-span-12">
-            <div class="results-form p-16">
-              <div class="form-wrap">
-                <h2 class="font-light text-center mb-8">Enter your details</h2>
-                <form id="mktoForm_3339"></form>
+        </div>
+
+        <div class="questions relative z-10 opacity-0 h-0 pointer-events-none">
+          <div class="grid grid-cols-12 gap-8">
+
+            <div class="questions-top col-span-12 text-white sm:mb-8 -translate-y-8 opacity-0">
+              <h3 class="sm:mb-10 mb-4 w-full">Business Observability Journey Mapper</h3>
+              <div class="steps flex justify-end items-end">
+                <div class="tabs sm:flex hidden justify-items-end items-end">
+                  <span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="label leading-none">
+                  <span id="step-number">1</span> of 7 steps
+                </div>
               </div>
-              <div class="thank-you opacity-0 h-0 pointer-events-none overflow-hidden">
-                <h2 class="font-light text-center mb-8">Thank you!</h2>
-                Click <a id="pdf-link" href="#">here</a> to view your full Business Observability Journey Mapper results
+            </div>
+
+            <div class="col-span-12 pb-8">
+              <div id="question-container" class="question-track relative">
+                <div class="grid grid-cols-12 gap-8">
+                  
+                  <!-- SYMBOL -->
+                  <div class="md:col-span-1 col-span-12 py-20">
+                    <svg id="question-circle" class="sm:ml-auto" xmlns="http://www.w3.org/2000/svg" width="65" height="41" fill="none">
+                      <path id="circle-inner" fill="#7B66FF" d="M15.518 20.38a4.38 4.38 0 108.76 0 4.38 4.38 0 00-8.76 0z"/>
+                      <path id="cicle-outer" fill="#7B66FF" d="M6.808 20.38a13.09 13.09 0 0113.09-13.09V0a20.35 20.35 0 000 40.69v-7.26a13.09 13.09 0 01-13.09-13.05z"/>
+                      <path id="circle-line" stroke="#190A63" stroke-linejoin="bevel" stroke-width=".48" d="M64.658 20.38h-44.82"/>
+                    </svg>
+                  </div>
+
+                  <!-- QUESTIONS -->
+                  <div class="lg:col-span-9 md:col-span-10 col-span-12">
+                    <!-- QUESTION 1 -->
+                    <div class="question question-1 relative z-10 active" data-signpost="1">
+                      <div class="inner-question">
+                        <div class="font-light sm:text-h3 text-2xl mb-7 leading-tight">Our research shows that, over the last 12 months, technologists were on average asked to deliver digital transformation projects three times faster than prior to the pandemic.</div>
+                        <div class="sm:text-6xl text-4xl leading-snug">How has this acceleration of digital transformation impacted you?</div>
+                        <div class="inputs">
+                          <div class="input-container input pill-type sm:mt-20 mt-10">
+                            I have felt under immense pressure
+                            <div class="pills sm:flex justify-start items-start mt-8" data-question="1a">
+                              <div class="input-element">
+                                <div class="sm:mb-0 mb-8 input-value button pill" data-value="1">Yes - definitely</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="sm:mb-0 mb-8 input-value button pill" data-value="2">To some extent</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="sm:mb-0 mb-8 input-value button pill" data-value="3">Not particularly</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-container input pill-type sm:mt-20 mt-10">
+                            My job feels more complex
+                            <div class="pills sm:flex justify-start items-start mt-8" data-question="1b">
+                              <div class="input-element">
+                                <div class="sm:mb-0 mb-8 input-value button pill" data-value="1">Yes - definitely</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="sm:mb-0 mb-8 input-value button pill" data-value="2">To some extent</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="sm:mb-0 mb-8 input-value button pill" data-value="3">Not particularly</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- QUESTION 2 -->
+                    <div class="question question-2 opacity-0 pointer-events-none absolute top-0 z-0" data-signpost="2">
+                      <div class="inner-question">
+                        <div class="font-light sm:text-h3 text-2xl mb-7 leading-tight">A year of rapid digital transformation has led to soaring levels of IT complexity in many organizations. In response, technologists have recognized the need to monitor the full IT estate, from traditional, legacy IT systems through to new, hybrid cloud environments.</div>
+                        <div class="sm:text-6xl text-4xl leading-snug">How important is it for you to monitor the following areas of your IT stack to cope with heightened complexity?</div>
+                        <div class="inputs">
+                          <div class="input-container input pill-type sm:mt-20 mt-10">
+                            Compute and storage infrastructure (traditional or cloud) health and impact on applications and services
+                            <div class="pills sm:flex justify-start items-start mt-8">
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Very important</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Important</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Not particularly important</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-container input pill-type sm:mt-20 mt-10">
+                            Network and infrastructure (traditional, cloud or WAN) health and impact on applications and services
+                            <div class="pills sm:flex justify-start items-start mt-8">
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Very important</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Important</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Not particularly important</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-container input pill-type sm:mt-20 mt-10">
+                            Applications and services health and impact on user experience and business outcomes
+                            <div class="pills sm:flex justify-start items-start mt-8">
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Very important</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Important</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Not particularly important</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- QUESTION 3 -->
+                    <div class="question question-3 opacity-0 pointer-events-none absolute top-0 z-0" data-signpost="3">
+                      <div class="inner-question">
+                        <div class="sm:text-6xl text-4xl leading-snug">To what extent have high data volumes caused by additional monitoring contributed to increased IT complexity in your organization?</div>
+                        <div class="inputs">
+                          <div class="input-container input pill-type sm:mt-20 mt-10">
+                            <div class="pills sm:flex justify-start items-start mt-8">
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">To a great extent</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">To some extent</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Not particularly</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Not at all</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- QUESTION 4 -->
+                    <div class="question question-4 opacity-0 pointer-events-none absolute top-0 z-0" data-signpost="4">
+                      <div class="inner-question sm:overflow-y-scroll sm:max-h-500">
+                        <div class="sm:text-6xl text-4xl leading-snug">When it comes to observing your entire IT stack and connecting IT performance to business outcomes, which of the following best describes your current capabilities?</div>
+                        <div class="instruction uppercase font-light text-2xl mt-10">Choose only one</div>
+                        <div class="input-container inputs valid-question" data-question="4">
+                          <div class="input radio-type mt-10">
+                            <div class="radios">
+                              <div class="radio input-element flex justify-start items-start py-10">
+                                <div class="label font-medium">A</div>
+                                <div class="radio-question">We use a range of different tools to monitor the IT stack but the lack of a unified view often makes it hard for our teams to work together.</div>
+                                <div class="input-value input rounded-full" data-value="A"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input radio-type">
+                            <div class="radios">
+                              <div class="radio input-element flex justify-start items-start py-10">
+                                <div class="label font-medium">B</div>
+                                <div class="radio-question">We have tried to implement a more unified observability / monitoring strategy across the IT stack to minimize MTTR, but we have little visibility into the business impact of performance issues and outages.</div>
+                                <div class="input-value input rounded-full" data-value="B"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input radio-type">
+                            <div class="radios">
+                              <div class="radio input-element flex justify-start items-start py-10">
+                                <div class="label font-medium">C</div>
+                                <div class="radio-question">We have a unified observability / monitoring strategy in place and access to high-level business KPIs, but we can’t visualize IT performance metrics and link these to user and business KPIs in real-time. </div>
+                                <div class="input-value input rounded-full" data-value="C"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input radio-type">
+                            <div class="radios">
+                              <div class="radio input-element flex justify-start items-start py-10">
+                                <div class="label font-medium">D</div>
+                                <div class="radio-question">We have a detailed view on how IT health and performance impacts business KPIs in near real-time, but we struggle to understand the ROI of IT performance fixes on user experience and business KPIs.</div>
+                                <div class="input-value input rounded-full" data-value="D"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input radio-type">
+                            <div class="radios">
+                              <div class="radio input-element flex justify-start items-start py-10">
+                                <div class="label font-medium">E</div>
+                                <div class="radio-question">We can see how an IT performance fix positively impacts user experience and business outcomes, and view real-time metrics via dashboards, but we still find it a challenge to evaluate and sort issues in real-time, based on potential impact to the business.</div>
+                                <div class="input-value input rounded-full" data-value="E"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input radio-type">
+                            <div class="radios">
+                              <div class="radio input-element flex justify-start items-start py-10">
+                                <div class="label font-medium">F</div>
+                                <div class="radio-question">We can filter technology issues and tickets based on user experience and business impact, but we’re still reliant on manual intervention to address IT issues and relate them to business metrics.</div>
+                                <div class="input-value input rounded-full" data-value="F"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input radio-type">
+                            <div class="radios">
+                              <div class="radio input-element flex justify-start items-start py-10">
+                                <div class="label font-medium">G</div>
+                                <div class="radio-question">We have advanced automation that quickly detects the impact of technology anomalies on end user experience and business performance. We can automatically right-size supporting infrastructure and migrate workloads to optimize applications performance and maximize business outcomes.</div>
+                                <div class="input-value input rounded-full" data-value="G"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- QUESTION 5 -->
+                    <div class="question question-5 opacity-0 pointer-events-none absolute top-0 z-0" data-signpost="5">
+                      <div class="inner-question">
+                        <div class="font-light sm:text-h3 text-2xl mb-7 leading-tight">Now think about the year ahead.</div>
+                        <div class="sm:text-6xl text-4xl leading-snug">How important will it be for your organization to directly correlate technology performance across the full IT stack with business outcomes to prioritize actions based on what will have the biggest impact?</div>
+                        <div class="instruction uppercase font-light text-2xl mt-10">Select only one</div>
+                        <div class="inputs">
+                          <div class="input-container input pill-type sm:mt-20 mt-10">
+                            <div class="pills valid-question flex flex-wrap justify-start items-start mt-8" data-question="5">
+                              <div class="input-element mb-6 sm:w-auto w-full">
+                                <div class="input-value button pill text-xl" data-value="A">Critical</div>
+                              </div>
+                              <div class="input-element mb-6 sm:w-auto w-full">
+                                <div class="input-value button pill text-xl" data-value="B">Important</div>
+                              </div>
+                              <div class="input-element mb-6 sm:w-auto w-full">
+                                <div class="input-value button pill text-xl" data-value="C">Quite important</div>
+                              </div>
+                              <div class="input-element mb-6 sm:w-auto w-full">
+                                <div class="input-value button pill text-xl" data-value="D">Not particularly important</div>
+                              </div>
+                              <div class="input-element mb-6 sm:w-auto w-full">
+                                <div class="input-value button pill text-xl" data-value="E">Not at all important</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- QUESTION 6 -->
+                    <div class="question question-6 opacity-0 pointer-events-none absolute top-0 z-0" data-signpost="6">
+                      <div class="inner-question">
+                        <div class="sm:text-6xl text-4xl leading-snug">In what timeframe do you anticipate your organization implementing full-stack observability linked to business outcomes?</div>
+                        <div class="instruction uppercase font-light text-2xl mt-10">Select only one</div>
+                        <div class="inputs">
+                          <div class="input-container input radio-type-alt sm:mt-20 mt-8">
+                            <div class="sm:grid grid-cols-12 grid-rows-3 grid-flow-col gap-4 mt-8 flex flex-wrap">
+
+                                <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-1">
+                                  <div class="input input-value"></div>
+                                  <div class="label">As soon as possible</div>
+                                </div>
+
+                                <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-3">
+                                  <div class="input input-value"></div>
+                                  <div class="label">Within 12 months</div>
+                                </div>
+
+                                <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-5">
+                                  <div class="input input-value"></div>
+                                  <div class="label">Longer term than this</div>
+                                </div>
+
+                                <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-2">
+                                  <div class="input input-value"></div>
+                                  <div class="label">Within 6 months</div>
+                                </div>
+
+
+                                <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-4">
+                                  <div class="input input-value"></div>
+                                  <div class="label">Within 24 months</div>
+                                </div>
+
+                                <div class="radio-alt input-element lg:col-span-4 col-span-6 sm:w-auto w-full order-6">
+                                  <div class="input input-value"></div>
+                                  <div class="label">No current plans</div>
+                                </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- QUESTION 7 -->
+                    <div class="question question-7 opacity-0 pointer-events-none absolute top-0 z-0" data-signpost="7">
+                      <div class="inner-question">
+                        <div class="sm:text-6xl text-4xl leading-snug">Finally, to what extent do you agree or disagree that the inability to connect full-stack observability with business performance will:</div>
+                        <div class="inputs">
+                          <div class="input-container input pill-type sm:mt-20 mt-10">
+                            Be detrimental to your business in 2021?
+                            <div class="pills sm:flex justify-start items-start mt-8">
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Strongly agree</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Tend to agree</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Tend to disagree</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Strongly disagree</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Don’t know</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-container input pill-type sm:mt-20 mt-10">
+                            Hinder you from achieving your personal career goals?
+                            <div class="pills sm:flex justify-start items-start mt-8">
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Strongly agree</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Tend to agree</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Tend to disagree</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Strongly disagree</div>
+                              </div>
+                              <div class="input-element">
+                                <div class="input-value button pill sm:mb-0 mb-8">Don’t know</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
               </div>
+
+            </div>
+
+            <div class="questions-bottom col-span-12 text-white mb-8 translate-y-8 opacity-0">
+              <div class="flex justify-between items-center relative">
+                <div id="prevButton" class="disabled button back">
+                  Back
+                </div>
+                <div id="nextButton" class="disabled button next">
+                  Next >
+                </div>
+                <div id="resultsButton" class="disabled button results pointer-events-none absolute right-0 transform translate-x-full opacity-0">
+                  View Result
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="results-top text-white relative z-10 opacity-0 h-0 pointer-events-none">
+          <div class="grid grid-cols-12 gap-8">
+            <div class="col-span-1 sm:block hidden text-right">
+              <svg class="sm:ml-auto" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M66 33V0C48.576 0 31.68 6.86405 19.272 19.272C6.86397 31.68 0 48.312 0 66H33C33 47.784 47.784 33 66 33Z" fill="#4E3EB1"/>
+              </svg>
+            </div>
+            <div class="sm:col-span-10 md:col-span-7 col-span-12">
+              <h1 class="text-h3 mb-4">Thanks for taking the time to complete the assessment.</h1>
+              <h2 class="md:text-h1 sm:text-6xl text-4xl font-light">Based on your responses, your organization is at '<span id="result-title">Level 1: Full-Stack Observability</span>'.</h2>
+            </div>
+            <div class="sm:col-span-10 md:col-span-7 col-span-12 sm:col-start-2 sm:text-3xl text-2xl sm:pb-0 pb-80">
+              <div class="result-text" data-result="1A">
+                <p>You can see performance data across your IT estate, from customer-facing applications down to core infrastructure. And you clearly understand the importance of linking IT performance to business outcomes to deliver faultless digital experience and drive accelerated innovation. </p>
+                <p>Well done! You’ve got the essential foundations in place to start your journey towards full-stack observability with business context.</p>
+                <p>To speed up this journey, you should look to implement a unified monitoring strategy across your IT estate so that you can quickly identify the root causes of issues, anywhere across the IT stack.</p>
+                <p>By progressing to the next stage – ‘Level 2: Business Visualization’ – you’ll start to develop an understanding of which business applications drive the most value for your business so you can decide where to prioritize your actions.</p>
+              </div>
+              <div class="result-text" data-result="1B">
+                <p>You can see performance data across your IT estate, from customer-facing applications down to core network and security infrastructure.</p>
+                <p>To accelerate your journey to link full-stack observability with business outcomes, you need more granular detail into IT systems’ health and performance, as well as user and business KPIs. This will enable you to prioritize actions based on what matters most to the business.</p>
+                <p>By progressing to the next stage – ‘Level 2: Business Visualization’ – you’ll be able to visualize IT performance metrics and link these to user and business KPIs in real-time.</p>
+              </div>
+              <div class="result-text" data-result="2A">
+                <p>You already have full-stack observability in place, with unified visibility of the entire IT estate. And you clearly understand the importance of linking IT performance to business outcomes to deliver faultless digital experience and drive accelerated innovation.</p>
+                <p>Well done! You’re making great progress on your journey towards full-stack observability with business context.</p>
+                <p>To accelerate this journey, you need more granular detail into IT systems’ health and performance, as well as user and business KPIs. This will enable you to prioritize actions based on what matters most to the business.</p>
+                <p>By progressing to the next stage – ‘Level 3: Business Correlation’ – you’ll be able to visualize IT performance metrics and link these to user and business KPIs in real-time.</p>
+              </div>
+              <div class="result-text" data-result="2B">
+                <p>You already have full-stack observability in place, with unified visibility of the entire IT estate.</p>
+                <p>To speed up your journey to link full-stack observability with business outcomes, you need more granular detail into IT systems’ health and performance, as well as user and business KPIs. This will enable you to prioritize actions based on what matters most to the business.</p>
+                <p>By progressing to the next stage – ‘Level 3: Business Correlation’ – you’ll be able to visualize IT performance metrics and link these to user and business KPIs in real-time.</p>
+              </div>
+              <div class="result-text" data-result="3A">
+                <p>You can see the impact that technology performance issues have on end users and the business. And you clearly understand the importance of linking IT performance to business outcomes to deliver faultless digital experience and drive accelerated innovation.</p>
+                <p>Well done! You’re making great progress on your journey towards full-stack observability with business context.</p>
+                <p>To accelerate this journey, you need to be able to see the ROI of IT performance fixes on business KPIs so that you can demonstrate the value that IT is delivering to your organization.</p>
+                <p>By progressing to the next stage – ‘Level 4: Business Validation’ – you’ll be able to validate the impact of every IT action by analyzing business KPIs.</p>
+              </div>
+              <div class="result-text" data-result="3B">
+                <p>You can see the impact that technology performance issues have on end users and the business.</p>
+                <p>To speed up your journey to link full-stack observability with business outcomes, you need to be able to see the ROI of IT performance fixes on business KPIs so that you can demonstrate the value that IT is delivering to your organization.</p>
+                <p>By progressing to the next stage – ‘Level 4: Business Validation’ – you’ll be able to validate the impact of every IT action by analyzing business KPIs.</p>
+              </div>
+              <div class="result-text" data-result="4A">
+                <p>You can validate the impact of every IT decision and action by analyzing business KPIs. And you clearly understand the importance of linking IT performance to business outcomes to deliver faultless digital experience and drive accelerated innovation.</p>
+                <p>Well done! You’re well on your way to linking full-stack observability with business context!</p>
+                <p>To accelerate this journey, you need to find a way to filter out all of the data noise and pinpoint those business critical issues that have the biggest impact on user experience or business transactions.</p>
+                <p>By progressing to the next stage – ‘Level 5: Business Prioritization’ – you’ll be able to evaluate the criticality of IT issues in real-time based on user and business impact.</p>
+              </div>
+              <div class="result-text" data-result="4B">
+                <p>You can validate the impact of every IT decision and action by analyzing business KPIs.</p>
+                <p>To speed up your journey to link full-stack observability with business outcomes, you need to find a way to filter out all of the data noise and pinpoint those business critical issues that have the biggest impact on user experience or business transactions.</p>
+                <p>By progressing to the next stage – ‘Level 5: Business Prioritization’ – you’ll be able to evaluate the criticality of IT issues in real-time based on user and business impact.</p>
+              </div>
+              <div class="result-text" data-result="5A">
+                <p>You can view real-time IT and business metrics and prioritize actions based on potential impact to the business. And you clearly understand the importance of linking IT performance to business outcomes to deliver faultless digital experience and drive accelerated innovation.</p>
+                <p>Well done! You’re now so close to linking full-stack observability with business context!</p>
+                <p>To take the final step, you should look to implement advanced automation and AI to minimize the time it takes to detect and remediate negative business trends.</p>
+                <p>By progressing to the next stage – ‘Level 6: Business Optimization’ – you’ll be able to automate and optimize IT performance across the entire IT stack to maximize user and business outcomes.</p>
+              </div>
+              <div class="result-text" data-result="5B">
+                <p>You can view real-time IT and business metrics and prioritize actions based on potential impact to the business.</p>
+                <p>To take the final step on your journey to link full-stack observability with business outcomes, you should look to implement advanced automation and AI to minimize the time it takes to detect and remediate negative business trends.</p>
+                <p>By progressing to the next stage – ‘Level 6: Business Optimization’ – you’ll be able to automate and optimize IT performance across the entire IT stack to maximize user and business outcomes.</p>
+              </div>
+              <div class="result-text" data-result="6A">
+                <p>Congratulations!! You’ve recognized the value of linking full-stack observability with business outcomes, and now you’re ready to reap the benefits!</p>
+                <p>You have the cutting-edge tools and deep, real-time insights you need to deliver world-class technology performance at all times and to drive game-changing business impact.</p>
+                <p>You’ve reached the pinnacle of linking full-stack observability with business outcomes but, as an Agent of Transformation, you’ll want to keep improving.</p>
+                <p>You might want to consider whether your full-stack observability strategy is ready for the next wave of digital transformation and explore how you can optimize technology performance to support your organization’s strategic goals.</p>
+              </div>
+              <div class="result-text" data-result="6B">
+                <p>Congratulations!! You have the cutting-edge tools and deep, real-time insights you need to deliver world-class technology performance at all times and to drive game-changing business impact.</p>
+                <p>You’ve reached the pinnacle of linking full-stack observability with business outcomes but you’ll want to keep improving.</p>
+                <p>You might want to consider whether your full-stack observability strategy is ready for the next wave of digital transformation and explore how you can optimize technology performance to support your organization’s strategic goals.</p>
+              </div>
+              <a href="#download-results">
+                <div class="download-anchor button button-outline mt-20">
+                  Download full results
+                </div>
+                <div class="down-indicator mt-20">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" fill="none"><path stroke="#FFFFFF" stroke-width="1.2" d="M1 13l11.998 10.667L25 13M1 1l11.998 10.667L25 1"/></svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="download-results" class="results-form opacity-0 h-0 pointer-events-none overflow-hidden">
+      <div class="container grid grid-cols-12 gap-8 opacity-0 py-20">
+        <div class="lg:col-span-5 lg:col-start-2 sm:col-span-6 col-span-12">
+          <h2>Get your full results</h2>
+          <p>Fill in the form to access your full results and discover:</p>
+          <ul id="low-tier" class="hidden">
+            <li>How you can accelerate your organization’s journey to Business Observability</li>
+            <li>The game-changing benefits of connecting full-stack observability with business outcomes</li>
+            <li>How other technologists are managing heightened IT complexity and the pressure to deliver rapid digital transformation within their organizations</li>
+            <li>Useful resources to assist you on your journey to Business Observability </li>
+          </ul>
+          <ul id="high-tier" class="hidden">
+            <li>How you can fully exploit the benefits of full-stack observability with business context in your organization</li>
+            <li>How other technologists are managing heightened IT complexity and the pressure to deliver rapid digital transformation within their organizations</li>
+            <li>Useful resources to ensure you are continually progressing and optimizing your full-stack observability capabilities</li>
+          </ul>
+          <p>We'll email you a PDF version of your results.</p>
+          <div id="fact-block" class="fact-block mt-12 p-8 bg-primary text-white relative">
+            <h3>Did you know?</h3>
+            <span class="text-9xl tracking-tightest">96<sup class="text-7xl">%</sup></span><br>
+            <p>of technologists state that having the ability to monitor their entire IT stack and directly link technical performance to business outcomes is vital to their ability to deliver first-class digital experiences and accelerate digital transformation in 2021 and beyond.</p>
+            <div class="shape absolute right-0 top-0">
+              <svg width="114" height="118" viewBox="0 0 114 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M134 -17L74.3238 118H0L59.6762 -17H134Z" fill="#4E3EB1"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-5 sm:col-span-6 col-span-12">
+          <div class="results-form p-16">
+            <div class="form-wrap">
+              <h2 class="font-light text-center mb-8">Enter your details</h2>
+              <form id="mktoForm_3339"></form>
+            </div>
+            <div class="thank-you opacity-0 h-0 pointer-events-none overflow-hidden">
+              <h2 class="font-light text-center mb-8">Thank you!</h2>
+              Click <a id="pdf-link" href="#">here</a> to view your full Business Observability Journey Mapper results
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
 
   </body>
 </html>

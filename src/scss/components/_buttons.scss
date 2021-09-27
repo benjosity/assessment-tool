@@ -13,7 +13,8 @@
     }
   }
 
-  &.next {
+  &.next,
+  &.results {
     &:hover {
       @apply bg-white text-primary;
     }
