@@ -101,9 +101,10 @@
   .mktoForm input[type='date'],
   .mktoForm textarea.mktoField,
   .mktoForm select.mktoField {
-    @apply block w-full py-3 px-4 transition-all ease-in duration-300;
+    @apply block w-full transition-all ease-in duration-300;
     background-color: #ffffff;
     border: 1px solid #8c9095;
+    padding: 0.75rem 1rem !important;
     border-radius: 9999px !important;
     font-size: 1.8rem !important;
     margin-bottom: 0.5rem;
@@ -136,13 +137,29 @@
     float: none !important;
   }
 
+  .mktoCheckboxList {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+
+  #LblprivacyPolicy {
+    float: right !important;
+    width: calc(100% - 30px);
+  }
+
+  #privacyPolicy {
+    width: auto !important;
+  }
+
   .mktoButtonRow {
     width: 100%;
     display: block;
     float: none !important;
 
     .mktoButton[type='submit'] {
-      @apply w-full inline-block rounded-full px-8 py-6 bg-purple text-white cursor-pointer font-medium text-3xl cursor-pointer ease-in transition-all duration-500;
+      @apply inline-block rounded-full bg-purple text-white cursor-pointer font-medium text-3xl cursor-pointer ease-in transition-all duration-500;
+      padding: 1.5rem 2rem !important;
+      width: 100% !important;
 
       &:hover {
         @apply bg-primary;

@@ -1,4 +1,7 @@
 import { gsap } from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+
+gsap.registerPlugin(ScrollToPlugin);
 
 const ViewResults = () => {
   let tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'power2.out' } });
@@ -11,6 +14,7 @@ const ViewResults = () => {
   let mainShapeSVG = document.querySelector('.background-elements .main-shape svg');
   let mainShapeSVGinner = document.querySelector('.background-elements .main-shape svg .inner');
   let questionContainer = document.querySelector('.questions');
+  let progressBar = document.querySelector('.mobile-progress');
   let shapeY = '-28%';
   let shapeX = '25%';
   if (window.innerWidth < 640) {
@@ -32,6 +36,13 @@ const ViewResults = () => {
       {
         height: 'auto',
         pointerEvents: 'auto',
+      },
+      'start'
+    )
+    .to(
+      progressBar,
+      {
+        height: '0',
       },
       'start'
     )
@@ -108,6 +119,10 @@ const ViewResults = () => {
       },
       '+0.9'
     );
+
+  if (!window.matchMedia('(min-width: 640px)').matches) {
+    gsap.to(window, { duration: 0.6, scrollTo: '#app-top' });
+  }
 };
 
 export default ViewResults;

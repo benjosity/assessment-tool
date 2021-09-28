@@ -1,7 +1,7 @@
 import navValidation from '../navValidation';
 import updateSteps from '../updateSteps';
 
-const nextQuestionSlide = (tl, containerHeight, container, activeQuestion) => {
+const nextQuestionSlide = (tl, containerHeight, container, activeQuestion, addHeight) => {
   let questionCircle = document.getElementById('cicle-outer');
   let nextQuestion = document.querySelector('.question.active').nextElementSibling;
   let nextQuestionHeight =
@@ -42,7 +42,7 @@ const nextQuestionSlide = (tl, containerHeight, container, activeQuestion) => {
     .to(
       container,
       {
-        height: nextQuestionHeight,
+        height: nextQuestionHeight + addHeight,
       },
       '+0.6'
     )

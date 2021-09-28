@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <div class="mobile-progress sm:hidden">
+    <div id="app-top" class="mobile-progress sm:hidden overflow-hidden">
       <div class="bar"></div>
     </div>
 
@@ -57,10 +57,10 @@
         <div class="questions relative z-10 opacity-0 h-0 pointer-events-none">
           <div class="grid grid-cols-12 gap-8">
 
-            <div class="questions-top col-span-12 text-white sm:mb-8 -translate-y-8 opacity-0 sm:block hidden">
+            <div class="questions-top col-span-12 text-white sm:mb-8 -translate-y-8 opacity-0">
               <h3 class="sm:mb-10 mb-4 w-full">Business Observability Journey Mapper</h3>
-              <div class="steps flex justify-end items-end">
-                <div class="tabs sm:flex hidden justify-items-end items-end">
+              <div class="steps sm:flex hidden justify-end items-end">
+                <div class="tabs flex justify-items-end items-end">
                   <span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span>
                 </div>
                 <div class="label leading-none">
