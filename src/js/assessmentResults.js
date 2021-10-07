@@ -49,9 +49,42 @@ const calculateResults = answers => {
     document.getElementById('fact-block').style.display = 'none';
   }
 
+  // Create Result ID
+  let baseID = '7012H000000sl';
+  let uniqueID = '';
+
+  // get identifying letter
+  if (level === '1' && appetite === 'A') {
+    uniqueID = '3J';
+  } else if (level === '1' && appetite === 'B') {
+    uniqueID = '3E';
+  } else if (level === '2' && appetite === 'A') {
+    uniqueID = '3T';
+  } else if (level === '2' && appetite === 'B') {
+    uniqueID = '3O';
+  } else if (level === '3' && appetite === 'A') {
+    uniqueID = '3d';
+  } else if (level === '3' && appetite === 'B') {
+    uniqueID = '3Y';
+  } else if (level === '4' && appetite === 'A') {
+    uniqueID = '3n';
+  } else if (level === '4' && appetite === 'B') {
+    uniqueID = '3i';
+  } else if (level === '5' && appetite === 'A') {
+    uniqueID = '3A';
+  } else if (level === '5' && appetite === 'B') {
+    uniqueID = '3x';
+  } else if (level === '6' && appetite === 'A') {
+    uniqueID = '47';
+  } else if (level === '6' && appetite === 'B') {
+    uniqueID = '42';
+  }
+
+  let resultID = baseID + uniqueID;
+
   // Show main results copy
   const result = level + '' + appetite;
-  document.querySelector('input[name="campaignID"').value = 'Level: ' + level + ', ' + appetiteVal;
+  document.querySelector('input[name="campaignID"').value = resultID;
   document.querySelector("[data-result='" + result + "']").style.display = 'block';
 
   ViewResults();
