@@ -1,6 +1,7 @@
 import StartTest from './animations/startTestAnimation';
 import navigateQuestions from './navigateQuestions';
 import getResults from './assessmentResults';
+import checkScrolls from './checkScrolls';
 import mktoForm from './form/marketoForm';
 
 import './inputValidation.js';
@@ -22,5 +23,12 @@ document.body.addEventListener('click', function (event) {
   }
 });
 
+// Check questions for vertical scrollbar and place scroll icon
+window.addEventListener('load', function () {
+  checkScrolls(); 
+});
+
 // Load Results Form
 mktoForm();
+
+

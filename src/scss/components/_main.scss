@@ -45,20 +45,35 @@
     box-shadow: 0px 6px 6px 2px rgba(25, 33, 43, 0.3);
 
     @media (min-width: 640px) {
-      @apply overflow-hidden min-h-50 max-h-50;
+      @apply overflow-hidden;
+      max-height: 55rem;
+      min-height: 55rem;
     }
 
     .question {
       @media (min-width: 640px) {
-        @apply min-h-50 max-h-50 overflow-auto;
+        @apply overflow-auto;
+        max-height: 55rem;
+        min-height: 55rem;
       }
 
       .inner-question {
-        @apply pb-10 px-8;
+        @apply pb-10 px-8 z-10 relative;
 
         @media (min-width: 640px) {
-          @apply py-20 px-8;
+          @apply py-20 px-8 pr-24;
         }
+      }
+
+      .down-indicator {
+        position: sticky;
+        z-index: 0;
+        bottom: 3rem;
+        padding-right: 2.5rem;
+        z-index: 0;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
       }
     }
   }
